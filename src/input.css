@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Pontano+Sans:wght@300..700&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "./text-fluid.css";
+@plugin "daisyui";
+
+@theme {
+    --font-archivo: "Archivo Black", sans-serif;
+    --font-bebas: "Bebas Neue", sans-serif;
+    --font-pontano: "Pontano Sans", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+}
