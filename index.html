@@ -1,3 +1,14 @@
+<!-- 
+    ? FRAMEWORK USED:
+    * Tailwind - 4.3.4
+    * React.js - 19.3.1
+
+    ? TAILWIND LIBRARY USED:
+    * DaisyUI - 5.7.50
+    * Aos - 2.3.4
+    * Tailwind Animations - 1.0.2
+-->
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -5,272 +16,366 @@
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-        <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
         <title>Website Portfolio</title>
     </head>
 
-    <body class="text-gray-100 font-pontano bg-radial-[at_50%_0%] bg-[#111111] from-[#191919] to-[#0f0f0f] to-100% scroll-smooth tracking-wide" id="root">
+    <body class="text-gray-100 font-pontano bg-radial-[at_50%_0%] bg-[#111111] from-[#191919] to-[#0f0f0f] to-100% scroll-smooth tracking-wide">
+        <div id="root">
+            <header>
+                <div class="navbar fixed inset-x-0 z-50 min-h-auto bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-b border-[#fdfcfc47] text-[clamp(0.875rem,0.7143rem+0.8036vw,2rem)] p-[1.25%_3.5%]">
+                    <div class="navbar-start min-w-0 flex-1">
+                        <a href="#" class="font-black pl-2.5">Xyrill Adrienne Combes</a>
+                    </div>
 
-        <header>
-            <div class="navbar fixed inset-x-0 z-50 min-h-auto bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-b border-[#fdfcfc47] text-[clamp(0.875rem,0.7143rem+0.8036vw,2rem)] p-[1.25%_3.5%]">
-                <div class="navbar-start min-w-0 flex-1">
-                    <a href="#" class="font-black pl-2.5">Xyrill Adrienne Combes</a>
-                </div>
+                    <div class="navbar-end w-auto md:hidden">
+                        <div class="dropdown dropdown-end">
+                            <button aria-label="Menu" class="btn btn-ghost btn-sm transition-all duration-300 hover:bg-[#ffffff1f] focus:bg-[#ffffff1f]">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
 
-                <div class="navbar-end w-auto md:hidden">
-                    <div class="dropdown dropdown-end">
-                        <button aria-label="Menu" class="btn btn-ghost btn-sm transition-all duration-300 hover:bg-[#ffffff1f] focus:bg-[#ffffff1f]">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
+                            <ul class="menu dropdown-content mt-5 w-[clamp(8.75rem,5.7143rem+15.1786vw,13rem)] rounded-box z-50 bg-linear-to-b from-[#1a1a1a]/70 to-[#0f0f0f]/80 backdrop-blur-xl border border-[#ffffff41] text-[clamp(0.875rem,0.6071rem+1.3393vw,1.25rem)]">
+                                <div class="p-[5%]">
+                                    <li><a href="#home" class="hover:bg-[#ffffff1f] active:bg-primary">Home</a></li>
+                                    <li><a href="#about" class="hover:bg-[#ffffff1f] active:bg-primary">About</a></li>
+                                    <li><a href="#projects" class="hover:bg-[#ffffff1f] active:bg-primary">Projects</a></li>
+                                    <li><a href="#contact" class="hover:bg-[#ffffff1f] active:bg-primary">Contact</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <ul class="menu dropdown-content mt-5 w-35 rounded-box z-50 bg-linear-to-b from-[#1a1a1a]/70 to-[#0f0f0f]/80 backdrop-blur-xl border border-[#ffffff41]">
-                            <li><a href="#home" class="hover:bg-[#ffffff1f] active:bg-primary">Home</a></li>
-                            <li><a href="#about" class="hover:bg-[#ffffff1f] active:bg-primary">About</a></li>
-                            <li><a href="#projects" class="hover:bg-[#ffffff1f] active:bg-primary">Projects</a></li>
-                            <li><a href="#contact" class="hover:bg-[#ffffff1f] active:bg-primary">Contact</a></li>
-                        </ul>
+                    <div class="hidden font-bold md:grid grid-cols-4 gap-[clamp(1.25rem,-2.5rem+7.8125vw,10rem)]">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contacts">Contacts</a>
                     </div>
                 </div>
+            </header>
 
-                <div class="hidden font-bold md:grid grid-cols-4 gap-[clamp(1.25rem,-2.5rem+7.8125vw,10rem)]">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contacts">Contacts</a>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <section class="home text-center">
-                <div class="pt-[6rem]">
-                    <div class="grid grid-cols-1 sm:grid-cols-2"></div>
-                        <div class="firsthalf">
-                            <div class="p-[5%] flex justify-center items-center">
-                                <i class="fa-regular fa-circle-user text-[clamp(10rem,2.8412rem+35.7942vw,20rem)]"></i>
-                            </div>
-                        </div>
-
-                        <div class="secondhalf">
-                            <div class=" p-[1rem_5%_8.5%_5%]">
-                                <p class="font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] text-[#B7B7B7]">Xyrill Adrienne Combes</p>
-                                <div class="text-[clamp(1.8125rem,0.8729rem+4.698vw,3.125rem)] font-black -space-y-2">
-                                    <p class="pt-[0.25rem]">Front-end Developer</p>
-                                    <p class="">and Designer</p>
-                                </div>
-                                <p class="text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem voluptatum molestias nesciunt praesentium officiis. Sed reiciendis sint vitae eos.</p>
-                            </div>
-                        
-
-                            <div class="">
-                                <div class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                                    <button class="button rounded-lg backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
-                                        <div class="flex">
-                                            <p class="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">Download CV</p>
-                                            <i class="fa-regular fa-file ml-2 mt-1 text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)]"></i>
-                                        </div>
-                                    </button>
+            <main>
+                <section class="home text-center">
+                    <div class="pt-24">
+                        <div class="grid grid-cols-1 sm:grid-cols-2"></div>
+                            <div class="firsthalf">
+                                <div class="p-[5%] flex justify-center items-center">
+                                    <i class="fa-regular fa-circle-user text-[clamp(10rem,2.8412rem+35.7942vw,20rem)]"></i>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <div class="p-[0_5%_5%]">
-                <div class="p-[15%_1rem_0_1rem]">
-                    <div class="">
-                        <p class="text-[clamp(1.5rem,0.7841rem+3.5794vw,2.5rem)] font-black">Characteristics</p>
-                        <p class= "text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et illum laborum, accusamus vel velit!</p>
-                    </div>
-                </div>
-            </div>
-
-            <section class="m-[1rem_8%_7rem]">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2%] grid-rows-fr">
-                    <div data-aos="zoom-in">
-                        <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                            <i class="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                            <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Punctual</p>
-                            <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto nihil a, aspernatur quo quos neque laudantium nesciunt pariatur at?<p>
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in">
-                        <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                            <i class="fa-regular fa-lightbulb text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                            <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Motivation</p>
-                            <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, consectetur minima sit optio ipsum fuga odit sint eos corrupti cum.</p>
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in">
-                        <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                            <i class="fa-regular fa-cloud text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                            <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Curiosity<p>
-                            <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia tenetur esse nostrum ea aperiam possimus cupiditate deserunt consequatur itaque?</p>
-                        </div>
-                    </div>
-                    
-                    <div data-aos="zoom-in">
-                        <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                            <i class="fa-solid fa-users text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                            <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Teamwork</p>
-                            <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit nesciunt ratione dolorem soluta tempore accusantium quae ipsa minima fugiat!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="p-[2%_8%_2%_8%]">
-                <hr class="text-[#454444] font-thin">
-            </div>
-
-            <section class="about pb-[3rem]">
-                <div class="p-[15%_10%_15%_10%]">
-                    <div class="">
-                        <p class="text-[32px] font-black">About Me</p>
-                        <p class="text-xs text-[#A2A1A1]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cupiditate impedit corrupti dolorum repudiandae dignissimos repellat. Ratione quam, quae incidunt aut vero sapiente illum, laudantium minima ipsam praesentium provident fuga!<p>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <div class="p-[5%_10%_5%_10%]">
-                        <div class="">
-                            <p class="text-[1.5rem] font-black">Skills and Knowledge</p>
-                            <p class="text-[#9b9a9a] text-xs">UI / UX Designer  •  Front-end Developer  •  Responsive Web Performance</p>
-                        </div>
-
-                        <div class="grid grid-cols-1  pt-2.5">
-                            <div class="">
-                                <i class="fa-brands fa-html5 text-[1.25rem]"></i>
-                                <i class="fa-brands fa-css3-alt text-[1.25rem]"></i>
-                                <i class="fa-brands fa-square-js text-[1.25rem]"></i>
-                                <i class="fa-brands fa-tailwind-css text-[1.25rem]"></i>
-                                <i class="fa-brands fa-node-js text-[1.25rem]"></i>
-                                <i class="fa-brands fa-react text-[1.25rem]"></i>
-                                <i class="fa-brands fa-bootstrap text-[1.25rem]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-[0_10%_0_10%]">
-                    <p class="text-[#e6e4e4] font-black pt-[5%] text-[1.25rem]">Front-end development</p>
-                    <p class="text-[#7a7a7a] text-xs">HTML  •  CSS  •  JavaScript</p>
-                </div>
-
-                <div class="p-[0_10%_0_10%]">
-                    <p class="text-[#e6e4e4] font-black pt-[5%] text-[1.25rem]">Software Framework</p>
-                    <p class="text-[#7a7a7a] text-xs">Tailwind CSS  •  React.js  •  Node.js   •  Bootstrap</p>
-                </div>
-
-                <div class="m-[13.5%] grid grid-cols-1 gap-[2.5%]">
-                    <div data-aos="zoom-in">
-                        <div class="">
-                            <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                                <i class="fa-solid fa-brush text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                                <p class="text-[#e6e4e4] font-black text-[1.25rem] pt-[5%]">UI / UX Designer</p>
-                                <p class="text-[#7a7a7a] text-xs m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in">
-                        <div class="">
-                            <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                                <i class="fa-solid fa-computer text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                                <p class="text-[#e6e4e4] font-black text-[1.25rem] pt-[5%]">Front-end Developer</p>
-                                <p class="text-[#7a7a7a] text-xs m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in">
-                        <div class="">
-                            <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
-                                <i class="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                                <p class="text-[#e6e4e4] font-black text-[1.25rem] pt-[5%]">Responsive Web Performance</p>
-                                <p class="text-[#7a7a7a] text-xs m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="p-[2%_8%_2%_8%]">
-                <hr class="text-[#454444] font-thin">
-            </div>
-
-            <section class="projects pb-[10%]">
-                <div class="p-[10%_10%_10%_10%]">
-                    <div class="">
-                        <p class="text-[32px] font-black">Projects and Works</p>
-                        <p class="text-xs text-[#A2A1A1] pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cupiditate impedit corrupti dolorum repudiandae dignissimos repellat. Ratione quam, quae incidunt aut vero sapiente illum, laudantium minima ipsam praesentium provident fuga!<p>
-                    </div>
-                </div>
-
-                <div class="p-[10%_10%_0_10%]">
-                    <div class="">
-                        <div class="">
-                            <p class="text-[#e6e4e4] font-black text-[1.5rem]">Major projects</p>
-                            <p class="text-[#9b9a9a] text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="pt-[7%]">
-                            <div class="grid grid-cols-1">
-                                <p class="font-black">Ecoscapes</p>
-                                <div class="text-[10px] font-black text-[#d5d3d3]">
-                                    <div class="flex gap-1.5 pt-[0.2rem]">
-                                        <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">HTML</p>
-                                        <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">CSS</p>
-                                        <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">JavaScript</p>
+                            <div class="secondhalf">
+                                <div class=" p-[1rem_5%_8.5%_5%]">
+                                    <p class="font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] text-[#B7B7B7]">Xyrill Adrienne Combes</p>
+                                    <div class="text-[clamp(1.8125rem,0.8729rem+4.698vw,3.125rem)] font-black -space-y-2">
+                                        <p class="pt-1">Front-end Developer</p>
+                                        <p class="">and Designer</p>
                                     </div>
-                                <p class="text-[#9b9a9a] text-xs pt-[0.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium incidunt voluptas.</p>
+                                    <p class="text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem voluptatum molestias nesciunt praesentium officiis. Sed reiciendis sint vitae eos.</p>
                                 </div>
-                                <div class="pt-[0.5rem]">
-                                    <img src="./src/img/Ecoscapes.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+                            
+
+                                <div class="">
+                                    <div class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                                        <button class="button rounded-lg backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
+                                            <div class="flex">
+                                                <p class="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">Download CV</p>
+                                                <i class="fa-regular fa-file ml-2 mt-1 text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)]"></i>
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="">
+                <div class="p-[0_5%_5%]">
+                    <div class="p-[15%_1rem_0_1rem]">
                         <div class="">
-                            <p class="text-[#e6e4e4] font-black pt-[5%] text-[1.25rem]">Other design works</p>
-                            <p class="text-[#9b9a9a] text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <div class="grid grid-cols-1">
-                                <div class="pt-[0.5rem]">
-                                    <img src="./src/img/other1.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
-                                </div>
+                            <p class="text-[clamp(1.5rem,0.7841rem+3.5794vw,2.5rem)] font-black">Characteristics</p>
+                            <p class= "text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et illum laborum, accusamus vel velit!</p>
+                        </div>
+                    </div>
+                </div>
 
-                                <div class="pt-[0.5rem]">
-                                    <img src="./src/img/other2.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+                <section class="m-[1rem_8%_7rem]">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2%] grid-rows-fr">
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                    <i class="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Punctual</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto nihil a, aspernatur quo quos neque laudantium nesciunt pariatur at?<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                    <i class="fa-regular fa-lightbulb text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Motivation</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, consectetur minima sit optio ipsum fuga odit sint eos corrupti cum.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                    <i class="fa-regular fa-cloud text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Curiosity<p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia tenetur esse nostrum ea aperiam possimus cupiditate deserunt consequatur itaque?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                    <i class="fa-solid fa-users text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Teamwork</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit nesciunt ratione dolorem soluta tempore accusantium quae ipsa minima fugiat!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
 
-        <footer class="footer p-10 bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47]">
-            <div class="">
+                <div class="p-[2%_8%_2%_8%]">
+                    <hr class="text-[#454444] font-thin">
+                </div>
+
+                <section class="about pb-12">
+                    <div class="p-[15%_10%_15%_10%]">
+                        <div class="">
+                            <p class="text-[clamp(2rem,1.1071rem+4.4643vw,3.25rem)] font-black">About Me</p>
+                            <p class="text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] text-[#A2A1A1]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cupiditate impedit corrupti dolorum repudiandae dignissimos repellat. Ratione quam, quae incidunt aut vero sapiente illum, laudantium minima ipsam praesentium provident fuga!<p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="p-[5%_10%_5%_10%]">
+                            <div class="">
+                                <p class="text-[clamp(1.5rem,0.7841rem+3.5794vw,2.5rem)] font-black">Skills and Knowledge</p>
+                                <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">UI / UX Designer  •  Front-end Developer  •  Responsive Web Performance</p>
+                            </div>
+
+                            <div class="grid grid-cols-1  pt-3">
+                                <div class="">
+                                    <i class="fa-brands fa-html5 text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                    <i class="fa-brands fa-css3-alt text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                    <i class="fa-brands fa-square-js text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                    <i class="fa-brands fa-tailwind-css text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                    <i class="fa-brands fa-node-js text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                    <i class="fa-brands fa-react text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                    <i class="fa-brands fa-bootstrap text-[clamp(1.25rem,0.1429rem+5.5357vw,2.8rem)]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-[0_10%_0_10%]">
+                        <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Front-end development</p>
+                        <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">HTML  •  CSS  •  JavaScript</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 m-[1rem_12%] gap-2 ">
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">HTML</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">CSS</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">JavaScript</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 55%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-[0_10%_0_10%]">
+                        <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Software Framework</p>
+                        <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Tailwind CSS  •  React.js  •  Node.js   •  Bootstrap</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 m-[1rem_12%] gap-2">
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">Tailwind CSS</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">React.js</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">Node.js</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-[#a19f9f]">
+                            <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">Bootstrap</div>
+                            <div class="p-[0_10px]">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                    <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
+                                        <div class="h-full rounded bg-zinc-200" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-[3rem_8%_7rem] grid grid-cols-1 sm:grid-cols-2 gap-[2%] grid-rows-fr">
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[7.5%]">
+                                    <i class="fa-solid fa-brush text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">UI / UX Designer</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[7.5%]">
+                                    <i class="fa-solid fa-computer text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Front-end developer</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[7.5%]">
+                                    <i class="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Responsive performance</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in">
+                            <div class="contents">
+                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[7.5%]">
+                                    <i class="fa-solid fa-code-branch text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
+                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Version control</p>
+                                    <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="p-[2%_8%_2%_8%]">
+                    <hr class="text-[#454444] font-thin">
+                </div>
+
+                <section class="projects pb-[10%]">
+                    <div class="p-[10%_10%_10%_10%]">
+                        <div class="">
+                            <p class="text-[32px] font-black">Projects and Works</p>
+                            <p class="text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] text-[#A2A1A1] pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cupiditate impedit corrupti dolorum repudiandae dignissimos repellat. Ratione quam, quae incidunt aut vero sapiente illum, laudantium minima ipsam praesentium provident fuga!<p>
+                        </div>
+                    </div>
+
+                    <div class="p-[10%_10%_0_10%]">
+                        <div class="">
+                            <div class="">
+                                <p class="text-[#e6e4e4] font-black text-[1.5rem]">Major projects</p>
+                                <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="pt-[7%]">
+                                <div class="grid grid-cols-1">
+                                    <p class="font-black">Ecoscapes</p>
+                                    <div class="text-[10px] font-black text-[#d5d3d3]">
+                                        <div class="flex gap-1.5 pt-[0.2rem]">
+                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">HTML</p>
+                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">CSS</p>
+                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">JavaScript</p>
+                                        </div>
+                                    <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] pt-[0.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium incidunt voluptas.</p>
+                                    </div>
+                                    <div class="pt-[0.5rem]">
+                                        <img src="./src/img/Ecoscapes.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="">
+                                <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Other design works</p>
+                                <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="grid grid-cols-1">
+                                    <div class="pt-[0.5rem]">
+                                        <img src="./src/img/other1.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+                                    </div>
+
+                                    <div class="pt-[0.5rem]">
+                                        <img src="./src/img/other2.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer p-10 bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47]">
                 <div class="">
+                    <div class="">
 
+                    </div>
                 </div>
-            </div>
-        </footer>
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+            </footer>
+        </div>
+        <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>
