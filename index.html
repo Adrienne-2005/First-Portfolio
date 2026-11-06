@@ -5,8 +5,9 @@
 
     ? TAILWIND LIBRARY USED:
     * DaisyUI - 5.7.50
-    * Aos - 2.3.4
+      Aos - 2.3.4
     * Tailwind Animations - 1.0.2
+    * FlyonUI - 2.4.1
 -->
 
 <!doctype html>
@@ -39,7 +40,7 @@
                                     <li><a href="#home" class="hover:bg-[#ffffff1f] active:bg-primary">Home</a></li>
                                     <li><a href="#about" class="hover:bg-[#ffffff1f] active:bg-primary">About</a></li>
                                     <li><a href="#projects" class="hover:bg-[#ffffff1f] active:bg-primary">Projects</a></li>
-                                    <li><a href="#contact" class="hover:bg-[#ffffff1f] active:bg-primary">Contact</a></li>
+                                    <li><a href="#contacts" class="hover:bg-[#ffffff1f] active:bg-primary">Contacts</a></li>
                                 </div>
                             </ul>
                         </div>
@@ -55,7 +56,7 @@
             </header>
 
             <main>
-                <section class="home text-center">
+                <section class="text-center" id="home">
                     <div class="pt-24">
                         <div class="grid grid-cols-1 sm:grid-cols-2"></div>
                             <div class="firsthalf">
@@ -147,7 +148,7 @@
                     <hr class="text-[#454444] font-thin">
                 </div>
 
-                <section class="about pb-12">
+                <section class="pb-12" id="about">
                     <div class="p-[15%_10%_15%_10%]">
                         <div class="">
                             <p class="text-[clamp(2rem,1.1071rem+4.4643vw,3.25rem)] font-black">About Me</p>
@@ -177,7 +178,7 @@
                     </div>
 
                     <div class="p-[0_10%_0_10%]">
-                        <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Front-end development</p>
+                        <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Front-inset-e development</p>
                         <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">HTML  •  CSS  •  JavaScript</p>
                     </div>
 
@@ -282,7 +283,7 @@
                             <div class="contents">
                                 <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
                                     <i class="fa-solid fa-computer text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Front-end developer</p>
+                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Front-inset-e developer</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
                                 </div>
                             </div>
@@ -314,7 +315,7 @@
                     <hr class="text-[#454444] font-thin">
                 </div>
 
-                <section class="projects pb-[10%]">
+                <section id="projects" class="pb-[10%]">
                     <div class="p-[10%_10%_10%_10%]">
                         <div class="">
                             <p class="text-[clamp(2rem,1.1071rem+4.4643vw,3.25rem)] font-black">Projects and Works</p>
@@ -325,7 +326,7 @@
                     <div class="p-[10%_10%_0_10%]">
                         <div class="text-center">
                             <div class="">
-                                <p class="text-[#e6e4e4] font-black text-[clamp(1.5rem,0.7841rem+3.5794vw,2.5rem)]">Major projects</p>
+                                <p class="text-[#e6e4e4] font-black text-[clamp(1.5rem,0.7841rem+3.5794vw,2.5rem)]">Major Projects</p>
                                 <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
@@ -340,10 +341,64 @@
                                             <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">CSS</p>
                                             <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">JavaScript</p>
                                         </div>
-                                    <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] pt-[0.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium incidunt voluptas.</p>
+                                    <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium incidunt voluptas.</p>
                                     </div>
-                                    <div class="pt-[0.5rem]">
-                                        <img src="./src/img/Ecoscapes.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+
+                                    <div class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-2 w-full mt-[1.2rem] rounded-sm">
+                                        <div class="relative w-full flex items-center gap-2">
+
+                                            <a href="#ecoscapes-slide6" class="btn btn-circle btn-sm md:btn-md shrink-0 backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">
+                                                ❮
+                                            </a>
+                                        
+                                            <div class="relative w-full overflow-hidden">
+                                                <div class="carousel w-full">
+                                                    <div id="ecoscapes-slide1" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/Ecoscapes1.png" alt="Ecoscapes slide 1" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                    <div id="ecoscapes-slide2" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/Ecoscapes2.png" alt="Ecoscapes slide 2" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                    <div id="ecoscapes-slide3" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/Ecoscapes3.png" alt="Ecoscapes slide 3" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                    <div id="ecoscapes-slide4" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/Ecoscapes4.png" alt="Ecoscapes slide 4" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                    <div id="ecoscapes-slide5" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/Ecoscapes5.png" alt="Ecoscapes slide 5" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                    <div id="ecoscapes-slide6" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/Ecoscapes6.png" alt="Ecoscapes slide 6" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <a href="#ecoscapes-slide2" class="btn btn-circle btn-sm md:btn-md shrink-0 backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">
+                                                ❯
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="mt-3 flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+                                            <a href="#ecoscapes-slide1" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/Ecoscapes1.png" alt="Thumbnail 1" class="w-full h-full object-cover" />
+                                            </a>
+                                            <a href="#ecoscapes-slide2" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/Ecoscapes2.png" alt="Thumbnail 2" class="w-full h-full object-cover" />
+                                            </a>
+                                            <a href="#ecoscapes-slide3" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/Ecoscapes3.png" alt="Thumbnail 3" class="w-full h-full object-cover" />
+                                            </a>
+                                            <a href="#ecoscapes-slide4" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/Ecoscapes4.png" alt="Thumbnail 4" class="w-full h-full object-cover" />
+                                            </a>
+                                            <a href="#ecoscapes-slide5" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/Ecoscapes5.png" alt="Thumbnail 5" class="w-full h-full object-cover" />
+                                            </a>
+                                            <a href="#ecoscapes-slide6" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/Ecoscapes6.png" alt="Thumbnail 6" class="w-full h-full object-cover" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -351,15 +406,40 @@
 
                         <div class="">
                             <div class="">
-                                <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Other design works</p>
+                                <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Other Design Works</p>
                                 <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 <div class="grid grid-cols-1">
-                                    <div class="pt-[0.5rem]">
-                                        <img src="./src/img/other1.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
-                                    </div>
+                                    <div class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-2 w-full mt-[1.2rem] rounded-sm">
+                                        <div class="relative w-full flex items-center gap-2">
 
-                                    <div class="pt-[0.5rem]">
-                                        <img src="./src/img/other2.png" alt="Ecoscapes Landing Page" class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[8px] m-[3%] w-[15rem]">
+                                            <a href="#others-slide2" class="btn btn-circle btn-sm md:btn-md shrink-0 backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">
+                                                ❮
+                                            </a>
+                                        
+                                            <div class="relative w-full overflow-hidden">
+                                                <div class="carousel w-full">
+                                                    <div id="others-slide1" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/other1.png" alt="Ecoscapes slide 1" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                    <div id="others-slide2" class="carousel-item relative w-full h-max">
+                                                        <img src="./src/img/other2.png" alt="Ecoscapes slide 2" class="w-full object-cover aspect-video" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <a href="#others-slide2" class="btn btn-circle btn-sm md:btn-md shrink-0 backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">
+                                                ❯
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="mt-3 flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+                                            <a href="#others-slide1" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/other1.png" alt="Thumbnail 1" class="w-full h-full object-cover" />
+                                            </a>
+                                            <a href="#others-slide2" class="shrink-0 w-20 h-14 overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                                                <img src="./src/img/other2.png" alt="Thumbnail 2" class="w-full h-full object-cover" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +448,7 @@
                 </section>
             </main>
 
-            <footer class="footer p-10 bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47]">
+            <footer class="footer p-10 bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47]" id="contacts">
                 <div class="">
                     <div class="">
                         <i class="fa-solid fa-location-dot"></i>
@@ -395,7 +475,7 @@
                 <div class="">
                     <div class="">
                         <p class="">About Me</p>
-                        <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta veniam culpa nemo tempore odit repellendus aliquam omnis quod, quia a.</p>
+                        <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta veniam culpa nemo tempore odit repellinset-eus aliquam omnis quod, quia a.</p>
                     </div>
 
                     <div class="">
@@ -407,6 +487,7 @@
                 </div>
             </footer>
         </div>
-        <!-- <script type="module" src="/src/main.jsx"></script> -->
+
+        <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>
