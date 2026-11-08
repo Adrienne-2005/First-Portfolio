@@ -7,16 +7,16 @@
     * DaisyUI - 5.7.50
       Aos - 2.3.4
     * Tailwind Animations - 1.0.2
-    * FlyonUI - 2.4.1
 -->
 
 <!doctype html>
-<html lang="en">
+<html lang="en-PH">
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet">
+        <link href="./src/text-fluid.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
         <title>Website Portfolio</title>
     </head>
@@ -24,9 +24,9 @@
     <body class="text-gray-100 font-pontano bg-radial-[at_50%_0%] bg-[#111111] from-[#191919] to-[#0f0f0f] to-100% scroll-smooth tracking-wide">
         <div id="root">
             <header>
-                <div class="navbar fixed inset-x-0 z-50 min-h-auto bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-b border-[#fdfcfc47] text-[clamp(0.875rem,0.7143rem+0.8036vw,2rem)] p-[1.25%_3.5%]">
+                <div class="navbar fixed inset-x-0 z-50 min-h-auto bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-b border-[#fdfcfc47] text-[clamp(0.875rem,0.6286rem+1.2321vw,2.6rem)] p-[1.25%_3.5%]">
                     <div class="navbar-start min-w-0 flex-1">
-                        <a href="#" class="font-black pl-2.5">Xyrill Adrienne Combes</a>
+                        <a href="#home" class=" pl-2.5">Xyrill Adrienne Combes</a>
                     </div>
 
                     <div class="navbar-end w-auto md:hidden">
@@ -35,7 +35,7 @@
                                 <i class="fa-solid fa-bars"></i>
                             </button>
 
-                            <ul class="menu dropdown-content mt-5 w-[clamp(8.75rem,5.7143rem+15.1786vw,13rem)] rounded-box z-50 bg-linear-to-b from-[#1a1a1a]/70 to-[#0f0f0f]/80 backdrop-blur-xl border border-[#ffffff41] text-[clamp(0.875rem,0.6071rem+1.3393vw,1.25rem)]">
+                            <ul class="menu dropdown-content mt-5 backdrop-blur-2xl w-[clamp(8.75rem,5.7143rem+15.1786vw,13rem)] rounded-box z-50 border bg-linear-to-b from-[#181818d9] to-[#111111d8] border-[#fdfcfc47] text-[clamp(0.875rem,0.6071rem+1.3393vw,1.25rem)]">
                                 <div class="p-[5%]">
                                     <li><a href="#home" class="hover:bg-[#ffffff1f] active:bg-primary">Home</a></li>
                                     <li><a href="#about" class="hover:bg-[#ffffff1f] active:bg-primary">About</a></li>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
 
-                    <div class="hidden font-bold md:grid grid-cols-4 gap-[clamp(1.25rem,-2.5rem+7.8125vw,10rem)]">
+                    <div class="hidden md:grid grid-cols-4 gap-[clamp(1.25rem,-2.5rem+7.8125vw,10rem)]">
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
                         <a href="#projects">Projects</a>
@@ -56,8 +56,8 @@
             </header>
 
             <main>
-                <section class="text-center" id="home">
-                    <div class="pt-24">
+                <section class="" id="home">
+                    <div class="pt-24 lg:hidden text-center">
                         <div class="grid grid-cols-1 sm:grid-cols-2"></div>
                             <div class="firsthalf">
                                 <div class="p-[5%] flex justify-center items-center">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
 
-                            <div class="secondhalf">
+                            <div class="">
                                 <div class=" p-[1rem_5%_8.5%_5%]">
                                     <p class="font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] text-[#B7B7B7]">Xyrill Adrienne Combes</p>
                                     <div class="text-[clamp(1.8125rem,0.8729rem+4.698vw,3.125rem)] font-black -space-y-2">
@@ -77,14 +77,50 @@
                             
 
                                 <div class="">
-                                    <div class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                                        <button class="button rounded-lg backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
+                                    <div class="transition delay-150 duration-300 ease-in-out">
+                                        <button class="button rounded-lg backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
                                             <div class="flex">
                                                 <p class="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">Download CV</p>
                                                 <i class="fa-regular fa-file ml-2 mt-1 text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)]"></i>
                                             </div>
                                         </button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-24 hidden lg:block">
+                        <div class="pt-[15vh] pb-[7%]">
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                        
+                            <div class="pl-[42.5%] pr-[5%]">
+                                <div class="pb-5">
+                                    <div class="landingname text-[#B7B7B7]">
+                                        <p class="text-[clamp(2rem,0rem+3.125vw,5rem)] font-bold">Xyrill Adrienne Combes</p>
+                                    </div>
+                                
+                                    <div class="">
+                                        <div class="text-[clamp(3rem,-0.3333rem+5.2083vw,8rem)] font-bold mt-[2.5%]">
+                                            <p>Front-end</p>
+                                            <p>Developer & Designer</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="">
+                                        <p class="text-[clamp(1.1rem,0.1rem+1.5625vw,2.6rem)] mt-[2.5%] text-[#A2A1A1]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, nulla. Recusandae obcaecati maiores natus non consequatur quae cupiditate, ipsa odit.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="mt-[clamp(0.5rem,-2.1667rem+4.1667vw,4.5rem)]">
+                                    <button class="button rounded-lg backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[clamp(0.85rem,0.0833rem+1.1979vw,2rem)] cursor-pointer">
+                                        <div class="flex text-[clamp(1.25rem,0.0833rem+1.8229vw,3rem)]">
+                                            <p class="font-black ml-1">Download CV</p>
+                                            <i class="fa-regular fa-file ml-2 mt-1"></i>
+                                        </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -101,10 +137,10 @@
                 </div>
 
                 <section class="m-[1rem_8%_7rem]">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2%] grid-rows-fr">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] grid-rows-fr">
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Punctual</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto nihil a, aspernatur quo quos neque laudantium nesciunt pariatur at?<p>
@@ -114,7 +150,7 @@
 
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-regular fa-lightbulb text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Motivation</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, consectetur minima sit optio ipsum fuga odit sint eos corrupti cum.</p>
@@ -124,7 +160,7 @@
 
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-regular fa-cloud text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Curiosity<p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia tenetur esse nostrum ea aperiam possimus cupiditate deserunt consequatur itaque?</p>
@@ -134,7 +170,7 @@
                         
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-solid fa-users text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="font-black pt-[5%] text-[clamp(1.4rem,0.8286rem+2.8571vw,2.2rem)]">Teamwork</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit nesciunt ratione dolorem soluta tempore accusantium quae ipsa minima fugiat!</p>
@@ -178,15 +214,15 @@
                     </div>
 
                     <div class="p-[0_10%_0_10%]">
-                        <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Front-inset-e development</p>
-                        <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">HTML  •  CSS  •  JavaScript</p>
+                        <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Front-end development</p>
+                        <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] font-black">HTML  •  CSS  •  JavaScript</p>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 m-[1rem_12%] gap-2 ">
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">HTML</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 95%;"></div>
                                     </div>
@@ -197,7 +233,7 @@
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">CSS</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 90%;"></div>
                                     </div>
@@ -208,7 +244,7 @@
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">JavaScript</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 55%;"></div>
                                     </div>
@@ -219,14 +255,14 @@
 
                     <div class="p-[0_10%_0_10%]">
                         <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Software Framework</p>
-                        <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Tailwind CSS  •  React.js  •  Node.js   •  Bootstrap</p>
+                        <p class="text-[#7a7a7a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] font-black">Tailwind CSS  •  React.js  •  Node.js   •  Bootstrap</p>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 m-[1rem_12%] gap-2">
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">Tailwind CSS</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 95%;"></div>
                                     </div>
@@ -237,7 +273,7 @@
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">React.js</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 60%;"></div>
                                     </div>
@@ -248,7 +284,7 @@
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">Node.js</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 50%;"></div>
                                     </div>
@@ -259,7 +295,7 @@
                         <div class="text-[#a19f9f]">
                             <div class="mb-1 text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)]">Bootstrap</div>
                             <div class="p-[0_10px]">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[rgba(245,245,245,0.442)] p-1.5">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-1.5">
                                     <div class="h-3 w-full overflow-hidden rounded bg-zinc-700/60">
                                         <div class="h-full rounded bg-zinc-200" style="width: 80%;"></div>
                                     </div>
@@ -268,10 +304,10 @@
                         </div>
                     </div>
 
-                    <div class="m-[3rem_8%_7rem] grid grid-cols-1 sm:grid-cols-2 gap-[2%] grid-rows-fr">
+                    <div class="m-[3rem_8%_7rem] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] grid-rows-fr">
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-solid fa-brush text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">UI / UX Designer</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
@@ -281,9 +317,9 @@
 
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-solid fa-computer text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
-                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Front-inset-e developer</p>
+                                    <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Front-end developer</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
                                 </div>
                             </div>
@@ -291,7 +327,7 @@
 
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Responsive performance</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
@@ -301,7 +337,7 @@
 
                         <div data-aos="zoom-in">
                             <div class="contents">
-                                <div class="bg-linear-to-b from-[#222222] to-[#171717] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[rgba(245,245,245,0.442)] p-[10%]">
+                                <div class="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                                     <i class="fa-solid fa-code-branch text-[clamp(2.5rem,1.4286rem+5.3571vw,4rem)]"></i>
                                     <p class="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)] pt-[5%]">Version control</p>
                                     <p class="text-[#7a7a7a] text-[clamp(0.75rem,0.5714rem+0.8929vw,1rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, minus fugit. Incidunt commodi eos quod a id, ad fugit optio? Deleniti quo ratione quidem qui.</p>
@@ -337,14 +373,14 @@
                                     <p class="font-black text-[clamp(1rem,0.2411rem+3.7946vw,2.0625rem)]">Ecoscapes</p>
                                     <div class="text-[clamp(0.625rem,0.4018rem+1.1161vw,0.9375rem)] text-[#d5d3d3]">
                                         <div class="flex gap-1.5 pt-[0.2rem]">
-                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">HTML</p>
-                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">CSS</p>
-                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-[4px_6px]">JavaScript</p>
+                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[4px_6px]">HTML</p>
+                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[4px_6px]">CSS</p>
+                                            <p class="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[4px_6px]">JavaScript</p>
                                         </div>
                                     <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)] pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium incidunt voluptas.</p>
                                     </div>
 
-                                    <div class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-2 w-full mt-[1.2rem] rounded-sm">
+                                    <div class="backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-2 w-full mt-[1.2rem] rounded-sm">
                                         <div class="relative w-full flex items-center gap-2">
 
                                             <a href="#ecoscapes-slide6" class="btn btn-circle btn-sm md:btn-md shrink-0 backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">
@@ -409,7 +445,7 @@
                                 <p class="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8026rem+2.2371vw,1.875rem)]">Other Design Works</p>
                                 <p class="text-[#9b9a9a] text-[clamp(0.6875rem,0.3743rem+1.566vw,1.125rem)]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 <div class="grid grid-cols-1">
-                                    <div class="backdrop-blur-[3px] border border-solid border-xs border-[rgba(245,245,245,0.42)] bg-linear-to-b from-[#222222] to-[#171717] p-2 w-full mt-[1.2rem] rounded-sm">
+                                    <div class="backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-2 w-full mt-[1.2rem] rounded-sm">
                                         <div class="relative w-full flex items-center gap-2">
 
                                             <a href="#others-slide2" class="btn btn-circle btn-sm md:btn-md shrink-0 backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">
@@ -448,46 +484,53 @@
                 </section>
             </main>
 
-            <footer class="footer p-10 bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47]" id="contacts">
-                <div class="">
-                    <div class="">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div class="">
-                            <p class="">367 Doña Donisia Gate 1, Bayan Luma II</p>
-                            <p class="">Imus City, Cavite, Philippines</p>
+            <footer class="footer p-[clamp(2rem,1.2857rem+3.5714vw,3rem)] bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47] grid grid-cols-1 sm:grid-cols-2 sm:gap-[15%] text-[#cbcaca]" id="contacts">
+                <div class="flex flex-col justify-between space-y-6">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-location-dot text-[clamp(1.5rem,0.8rem+3vw,2.5rem)] text-[#fdfcfc] mt-1 shrink-0"></i>
+                        <div class="text-[clamp(0.75rem,0.45rem+1.2vw,1.125rem)] pl-4 leading-relaxed">
+                            <p>367 Doña Donisia, Bayan Luma II</p>
+                            <p>Imus City, Cavite, Philippines</p>
                         </div>
                     </div>
 
-                    <div class="">
-                        <i class="fa-solid fa-phone"></i>
-                        <p class="">+63 960 559 9276</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone text-[clamp(1.5rem,0.8rem+3vw,2.5rem)] text-[#fdfcfc] shrink-0"></i>
+                        <a href="tel:+639605599276" class="text-[clamp(0.75rem,0.45rem+1.2vw,1.125rem)] pl-4 hover:text-white transition-colors">+63 960 559 9276</a>
                     </div>
 
-                    <div class="">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div class="">
-                            <p class="">combesxyrill@gmail.com</p>
-                            <p class="">xyrilladrienne.combes@cvsu.edu.ph</p>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-envelope text-[clamp(1.5rem,0.8rem+3vw,2.5rem)] text-[#fdfcfc] mt-1 shrink-0"></i>
+                        <div class="text-[clamp(0.75rem,0.45rem+1.2vw,1.125rem)] pl-4 leading-relaxed">
+                            <p><a href="mailto:combesxyrill@gmail.com" class="hover:text-white transition-colors">combesxyrill@gmail.com</a></p>
+                            <p><a href="mailto:xyrilladrienne.combes@cvsu.edu.ph" class="hover:text-white transition-colors">xyrilladrienne.combes@cvsu.edu.ph</a></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="">
-                        <p class="">About Me</p>
-                        <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta veniam culpa nemo tempore odit repellinset-eus aliquam omnis quod, quia a.</p>
+                <div class="flex flex-col justify-between text-center sm:text-left">
+                    <div>
+                        <p class="text-[clamp(1.25rem,0.8rem+2vw,1.875rem)] font-black text-white tracking-wide">Social Media</p>
+                        <p class="text-[clamp(0.75rem,0.45rem+1.2vw,1.125rem)] text-[#a4a2a2] leading-relaxed p-[clamp(0.5rem,0.1429rem+1.7857vw,1rem)_0.25rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vitae ipsum iure repellendus aspernatur!</p>
                     </div>
 
-                    <div class="">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-square-pinterest"></i>
-                        <i class="fa-brands fa-square-github"></i>
-                        <i class="fa-brands fa-square-reddit"></i>
+                    <div class="flex w-full items-center justify-center sm:justify-start gap-4 text-[clamp(1.5rem,0.7841rem+3.5794vw,2.5rem)] text-[#faf9f9] text-center sm:text-left">
+                        <a href="https://www.facebook.com/xyrilladrienne.combes/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-white transition-colors">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="https://ph.pinterest.com/ValkyrieMaster/_profile/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="hover:text-white transition-colors">
+                            <i class="fa-brands fa-square-pinterest"></i>
+                        </a>
+                        <a href="https://github.com/Adrienne-2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-white transition-colors">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                        <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" aria-label="Reddit" class="hover:text-white transition-colors">
+                            <i class="fa-brands fa-square-reddit"></i>
+                        </a>
                     </div>
                 </div>
-            </footer>
+            </footer>    
         </div>
-
         <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>
