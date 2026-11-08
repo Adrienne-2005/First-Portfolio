@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Pontano+Sans:wght@300..700&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap');
 @import "tailwindcss";
-@import "./text-fluid.css";
 @import "tailwind-animations";
 @plugin "daisyui";
 
