@@ -87,7 +87,7 @@ function initGallery(gallery, signal) {
 
 function App() {
   useEffect(function () {
-    AOS.init({ duration: 500, once: false });
+    AOS.init({ duration: 400, once: false });
     AOS.refresh();
 
     var controller = new AbortController();
@@ -101,250 +101,212 @@ function App() {
   }, []);
 
   return (
-
     <>
-      <div>
-        <header className="font-black">
-          <div className="navbar fixed inset-x-0 z-50 min-h-auto bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-b-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] text-[clamp(0.875rem,0.6286rem+1.2321vw,2.6rem)] p-[1.25%_3.5%]">
-            <div className="navbar-start min-w-0 flex-1">
-              <a href="#home" className=" pl-2.5">
-                Xyrill Adrienne Combes
-              </a>
-            </div>
-            <div className="navbar-end w-auto md:hidden">
-              <div className="dropdown dropdown-end">
-                <button
-                  aria-label="Menu"
-                  className="btn btn-ghost btn-sm transition-all duration-300 hover:bg-[#ffffff1f] focus:bg-[#ffffff1f]"
-                >
-                  <i className="fa-solid fa-bars" />
-                </button>
-                <ul className="menu dropdown-content mt-5 backdrop-blur-2xl w-[clamp(8.75rem,5.7143rem+15.1786vw,13rem)] rounded-box z-50 border bg-linear-to-b from-[#181818d9] to-[#111111d8] border-[#fdfcfc47] text-[clamp(0.875rem,0.6071rem+1.3393vw,1.25rem)]">
-                  <div className="p-[5%]">
-                    <li>
-                      <a
-                        href="#home"
-                        className="hover:bg-[#ffffff1f] active:bg-primary"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#about"
-                        className="hover:bg-[#ffffff1f] active:bg-primary"
-                      >
-                        About
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#projects"
-                        className="hover:bg-[#ffffff1f] active:bg-primary"
-                      >
-                        Projects
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#contacts"
-                        className="hover:bg-[#ffffff1f] active:bg-primary"
-                      >
-                        Contacts
-                      </a>
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-            <div className="hidden md:grid grid-cols-4 gap-[clamp(1.25rem,-2.5rem+7.8125vw,10rem)]">
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contacts">Contacts</a>
+      <header className="font-black">
+        <div className="navbar fixed inset-x-0 z-50 min-h-auto bg-linear-to-b from-[#1a1a1a69] to-[#0f0f0f62] backdrop-blur-sm border-b-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] text-[clamp(0.875rem,0.6286rem+1.2321vw,2.6rem)] p-[1.25%_3.5%]">
+          <div className="navbar-start min-w-0 flex-1">
+            <a href="#home" className=" pl-2.5">Xyrill Adrienne Combes</a>
+          </div>
+
+          <div className="navbar-end w-auto md:hidden">
+            <div className="dropdown dropdown-end">
+              <button aria-label="Menu" className="btn btn-ghost btn-sm transition-all duration-300 hover:bg-[#ffffff1f] focus:bg-[#ffffff1f]">
+                <i className="fa-solid fa-bars" />
+              </button>
+
+              <ul className="menu dropdown-content mt-5 backdrop-blur-2xl w-[clamp(8.75rem,5.7143rem+15.1786vw,13rem)] rounded-box z-50 border bg-linear-to-b from-[#181818d9] to-[#111111d8] border-[#fdfcfc47] text-[clamp(0.875rem,0.6071rem+1.3393vw,1.25rem)]">
+                <div className="p-[5%]">
+                  <li><a href="#home" className="hover:bg-[#ffffff1f] active:bg-primary">Home</a></li>
+                  <li><a href="#about" className="hover:bg-[#ffffff1f] active:bg-primary">About</a></li>
+                  <li><a href="#projects" className="hover:bg-[#ffffff1f] active:bg-primary">Projects</a></li>
+                  <li><a href="#contacts" className="hover:bg-[#ffffff1f] active:bg-primary">Contacts</a></li>
+                </div>
+              </ul>
             </div>
           </div>
-        </header>
-        <main>
-          <section className="" id="home">
-            <div className="pt-24 lg:hidden text-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2" />
-              <div className="firsthalf">
-                <div className="p-[5%] flex justify-center items-center">
-                  <i className="fa-regular fa-circle-user text-[clamp(10rem,2.8412rem+35.7942vw,20rem)]" />
-                </div>
-              </div>
-              <div className="">
-                <div className=" p-[1rem_5%_8.5%_5%]">
-                  <p className="font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] text-[#B7B7B7]">
-                    Xyrill Adrienne Combes
-                  </p>
-                  <div className="text-[clamp(1.8125rem,0.8729rem+4.698vw,3.125rem)] font-black -space-y-2">
-                    <p className="pt-1">Front-end Developer</p>
-                    <p className="">and Designer</p>
-                  </div>
-                  <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Voluptas exercitationem voluptatum molestias nesciunt
-                    praesentium officiis. Sed reiciendis sint vitae eos.
-                  </p>
-                </div>
-                <div className="">
-                  <div className="transition delay-150 duration-300 ease-in-out">
-                    <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
-                      <div className="flex">
-                        <p className="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">
-                          Download CV
-                        </p>
-                        <i className="fa-regular fa-file ml-2 mt-1 text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)]" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-      </div>
-      <div className="hidden lg:block">
-        <div className="relative">
-          {/* <div class="absolute -z-20">
-                              <img class="w-screen object-fit object-cover h-240 opacity-50 mask-b-to-transparent mask-b-from-20%" src="" alt="profile-banner">
-                          </div> */}
-          {/* <div class="absolute inset-0 -z-10 bg-linear-to-r from-transparent via-[#111111ab] to-[#111111e3] pointer-events-none h-auto"></div> */}
-          <div className="grid grid-cols-2 relative pt-[25vh] pr-[5%] ">
-            <div className="flex justify-center items-center">
-              <i className="fa-regular fa-circle-user text-[clamp(20rem,-3.3333rem+36.4583vw,55rem)]" />
-            </div>
-            <div className="">
-              <div className="landingname text-[#B7B7B7]">
-                <p className="text-[clamp(2rem,0.1333rem+2.9167vw,4.8rem)] font-bold">
-                  Xyrill Adrienne Combes
-                </p>
-              </div>
-              <div className="">
-                <div className="text-[clamp(3rem,-0.2rem+5vw,7.8rem)] font-bold mt-[2.5%]">
-                  <p>Front-end</p>
-                  <p>Developer &amp; Designer</p>
-                </div>
-              </div>
-              <div className="">
-                <p className="text-[clamp(1.1rem,0.2333rem+1.3542vw,2.4rem)] mt-[2.5%] text-[#A2A1A1]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
-                  nulla. Recusandae obcaecati maiores natus non consequatur quae
-                  cupiditate, ipsa odit.
-                </p>
-              </div>
-              <div className="mt-[clamp(0.5rem,-2.1667rem+4.1667vw,4.5rem)]">
-                <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[clamp(0.85rem,0.0833rem+1.1979vw,2rem)] cursor-pointer">
-                  <div className="flex text-[clamp(1.25rem,0.0833rem+1.8229vw,3rem)]">
-                    <p className="font-black ml-1">Download CV</p>
-                    <i className="fa-regular fa-file ml-2 mt-1" />
-                  </div>
-                </button>
-              </div>
-            </div>
+
+          <div className="hidden md:grid grid-cols-4 gap-[clamp(1.25rem,-2.5rem+7.8125vw,10rem)]">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
           </div>
         </div>
-      </div>
-      <div className="p-[0_5%_5%]">
-        <div className="p-[15%_1rem_0_1rem]">
+      </header>
+      
+      <div id="home">
+        <section className="pt-24 lg:hidden text-center relative isolate overflow-hidden pb-[10%] border-b-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc43]">
           <div className="">
-            <p className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">
-              Characteristics
-            </p>
-            <p className="text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et
-              illum laborum, accusamus vel velit!
-            </p>
+            <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-20" />
           </div>
-        </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="p-[5%] flex justify-center items-center">
+              <i className="fa-regular fa-circle-user text-[clamp(10rem,2.8412rem+35.7942vw,20rem)]" />
+            </div>
+
+            <div className="">
+              <div className=" p-[1rem_5%_8.5%_5%]">
+                <p className="font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] text-[#B7B7B7]">Xyrill Adrienne Combes</p>
+
+                <div className="text-[clamp(1.8125rem,0.8729rem+4.698vw,3.125rem)] font-black -space-y-2">
+                  <p className="pt-1">Front-end Developer</p>
+                  <p className="">and Designer</p>
+                </div>
+                
+                <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem voluptatum molestias nesciunt praesentium officiis. Sed reiciendis sint vitae eos.</p>
+              </div>
+
+              <div className="">
+                <div className="pb-8">
+                  <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#212020] to-[#131313] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
+                    <div className="flex">
+                      <p className="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">Download CV</p>
+                      <i className="fa-regular fa-file ml-2 mt-1 text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)]" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="hidden lg:block relative isolate overflow-hidden pb-[10%] border-b-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc43]">
+          <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-95" />
+
+          <div className="absolute inset-0 -z-10 bg-linear-to-r from-[#111111]/50 to-[#111111dc] to-50%" />
+
+          <div className="relative">
+            <div className="grid grid-cols-2 relative pt-[clamp(11rem,4.3333rem+10.4167vw,21rem)] pr-[5%]">
+              <div className="flex justify-center items-center">
+
+                <i className="fa-regular fa-circle-user text-[clamp(20rem,0rem+31.25vw,50rem)]"/>
+              </div>
+
+              <div className="">
+                <div className="landingname text-[#B7B7B7]">
+                  <p className="text-[clamp(2rem,0.1333rem+2.9167vw,4.8rem)] font-bold">Xyrill Adrienne Combes</p>
+                </div>
+
+                <div className="">
+                  <div className="text-[clamp(3rem,-0.2rem+5vw,7.8rem)] font-bold mt-[2.5%]">
+                    <p>Front-end</p>
+                    <p>Developer & Designer</p>
+                  </div>
+                </div>
+
+                <p className="text-[clamp(1.1rem,0.2333rem+1.3542vw,2.4rem)] mt-[2.5%] text-[#A2A1A1]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, nulla. Recusandae obcaecati maiores natus non consequatur quae cupiditate, ipsa odit.</p>
+
+                <div className="mt-[clamp(2rem,0.3333rem+2.6042vw,4.5rem)]">
+                  <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a7c] to-[#0e0e0e6a] p-[clamp(0.85rem,0.0833rem+1.1979vw,2rem)] cursor-pointer">
+                    <div className="flex text-[clamp(1.25rem,0.0833rem+1.8229vw,3rem)]">
+                      <p className="font-black ml-1">Download CV</p>
+                      <i className="fa-regular fa-file ml-2 mt-1" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <section className="m-[1rem_8%_7rem] md:m-[1rem_7%_7rem]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] grid-rows-fr">
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[#fdfcfc47] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] p-[10%]">
-                <i className="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="font-black pt-[5%] text-[clamp(1.4rem,1.0286rem+1.8571vw,4rem)]">
-                  Punctual
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-                  architecto nihil a, aspernatur quo quos neque laudantium nesciunt
-                  pariatur at?
-                </p>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
-                <i className="fa-regular fa-lightbulb text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="font-black pt-[5%] text-[clamp(1.4rem,1.0286rem+1.8571vw,4rem)]">
-                  Motivation
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                  consectetur minima sit optio ipsum fuga odit sint eos corrupti
-                  cum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
-                <i className="fa-regular fa-cloud text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="font-black pt-[5%] text-[clamp(1.4rem,1.0286rem+1.8571vw,4rem)]">
-                  Curiosity
-                </p>
-                <p></p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia
-                  tenetur esse nostrum ea aperiam possimus cupiditate deserunt
-                  consequatur itaque?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-users text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="font-black pt-[5%] text-[clamp(1.4rem,1.0286rem+1.8571vw,4rem)]">
-                  Teamwork
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                  odit nesciunt ratione dolorem soluta tempore accusantium quae ipsa
-                  minima fugiat!
-                </p>
-              </div>
+
+      <main className='bg-radial-[at_50%_0%] bg-[#111111] from-[#191919] to-[#0f0f0f] to-100% relative'>
+        <div className="p-[5%_7%_1%_7%] relative">
+          <hr className="text-[#6d6b6b] font-thin" />
+        </div>
+
+        <div className="p-[4%_5%_4%]">
+          <div className="p-[0_1rem_0_1rem]">
+            <div className="">
+              <p className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">Characteristics</p>
+              <p className="text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore etillum laborum, accusamus vel velit!</p>
             </div>
           </div>
         </div>
-      </section>
-      <div className="p-[1%_8%_1%_8%]">
-        <hr className="text-[#454444] font-thin" />
-      </div>
-      <section className="pb-12" id="about">
-        <div className="p-[10%_9%_15%]">
-          <div className="text-center md:text-left">
-            <p className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">
-              About Me
-            </p>
-            <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              obcaecati recusandae assumenda quod sequi eaque, nihil omnis ex ut
-              unde a dolorum possimus illum optio eos dolore est nostrum eum!
-              Corporis, eligendi voluptatum quam aspernatur possimus amet tempora
-              autem hic.
-            </p>
-            <p></p>
+
+        <section className="m-[1rem_8%_7rem] md:m-[1rem_7%_7rem]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[#fdfcfc47] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] p-[10%]">
+                  <i className="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)] " />
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Punctual</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicaboarchitecto nihil a, aspernatur quo quos neque laudantium nesciuntpariatur at?</p>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-regular fa-lightbulb text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">
+                    Motivation
+                  </p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                    consectetur minima sit optio ipsum fuga odit sint eos corrupti
+                    cum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-regular fa-cloud text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">
+                    Curiosity
+                  </p>
+                  <p></p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia
+                    tenetur esse nostrum ea aperiam possimus cupiditate deserunt
+                    consequatur itaque?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-solid fa-users text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">
+                    Teamwork
+                  </p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                    odit nesciunt ratione dolorem soluta tempore accusantium quae ipsa
+                    minima fugiat!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="p-[1%_7%_5%_7%] relative">
+          <hr className="text-[#6d6b6b] font-thin" />
+        </div>
+      </main>
+
+      <section className="pb-12 relative isolate overflow-hidden" id="about">
+        <div className="p-[7%_9%_7%] relative border-y-[clamp(0.0625rem,0.0536rem+0.0446vw,0.125rem)] border-[#fdfcfc43]">
+          <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-90" />
+
+          <div className="absolute inset-0 -z-10 bg-linear-to-l from-[#111111]/50 to-[#111111dc] to-25%" />
+
+          <div className="">
+            <p className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">About Me</p>
+            <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sintobcaecati recusandae assumenda quod sequi eaque, nihil omnis ex utunde a dolorum possimus illum optio eos dolore est nostrum eum!Corporis, eligendi voluptatum quam aspernatur possimus amet temporaautem hic.</p>
           </div>
         </div>
+
+        <div className="p-[5%_7%_3%_7%] relative">
+          <hr className="text-[#6d6b6b] font-thin" />
+        </div>
+
         <div className="text-center">
           <div className="p-[1%_10%_1%_10%]">
             <div className="">
@@ -382,7 +344,7 @@ function App() {
               HTML
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -397,7 +359,7 @@ function App() {
               CSS
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -412,7 +374,7 @@ function App() {
               JavaScript
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -437,7 +399,7 @@ function App() {
               Tailwind CSS
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -452,7 +414,7 @@ function App() {
               React.js
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -467,7 +429,7 @@ function App() {
               Node.js
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -482,7 +444,7 @@ function App() {
               Bootstrap
             </div>
             <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                 <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
                   <div
                     className="h-full rounded bg-zinc-200"
@@ -493,15 +455,20 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="m-[6rem_7%_7rem] sm:mt-[7%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] grid-rows-fr">
+
+        <div className="p-[6rem_7%_0_7%] relative">
+          <hr className="text-[#6d6b6b] font-thin" />
+        </div>
+
+        <div className="m-[6rem_7%_7rem] sm:mt-[7%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
           <div data-aos="zoom-in">
             <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-brush text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] pt-[5%] lg:pb-5">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                <i className="fa-solid fa-brush text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
                   UI / UX Designer
                 </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
+                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
                   minus fugit. Incidunt commodi eos quod a id
                 </p>
@@ -510,12 +477,12 @@ function App() {
           </div>
           <div data-aos="zoom-in">
             <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-computer text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] pt-[5%] lg:pb-5">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                <i className="fa-solid fa-computer text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
                   Front-end Developer
                 </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
+                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
                   minus fugit. Incidunt commodi eos quod a id
                 </p>
@@ -524,12 +491,12 @@ function App() {
           </div>
           <div data-aos="zoom-in">
             <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] pt-[5%] lg:pb-5">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                <i className="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
                   Responsive Performance
                 </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
+                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
                   minus fugit. Incidunt commodi eos quod a id
                 </p>
@@ -538,12 +505,12 @@ function App() {
           </div>
           <div data-aos="zoom-in">
             <div className="contents">
-              <div className="bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-code-branch text-[clamp(2.5rem,1.7143rem+3.9286vw,8rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] pt-[5%] lg:pb-5">
+              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                <i className="fa-solid fa-code-branch text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
                   Version Control
                 </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] m-1">
+                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
                   minus fugit. Incidunt commodi eos quod a id
                 </p>
@@ -559,7 +526,7 @@ function App() {
         <div className="w-full pb-[10%]">
           <div className="p-[10%_8.5%_10%]">
             <p className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">
-              Projects &amp; Works
+              Projects & Works
             </p>
             <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] pt-3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
@@ -573,15 +540,15 @@ function App() {
               <p className="font-black text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)]  leading-tight">
                 Ecoscapes
               </p>
-              <div className="text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] text-[#d5d3d3 pt-2">
+              <div className="text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] text-[#d5d3d3] pt-2">
                 <ul className="flex flex-wrap gap-1.5 pt-[0.2rem] list-none">
-                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[4px_6px]">
+                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] p-[4px_6px]">
                     HTML
                   </li>
-                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[4px_6px]">
+                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] p-[4px_6px]">
                     CSS
                   </li>
-                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] p-[4px_6px]">
+                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] p-[4px_6px]">
                     JavaScript
                   </li>
                 </ul>
@@ -592,7 +559,7 @@ function App() {
               </p>
               <div
                 data-gallery=""
-                className="w-full backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]"
+                className="w-full backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]"
               >
                 <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
                   <button
@@ -779,7 +746,7 @@ function App() {
               </p>
               <div
                 data-gallery=""
-                className="w-full mt-[1.2rem] backdrop-blur-[3px] border border-solid border-xs border-[#fdfcfc47] bg-linear-to-b from-[#1d1d1d] to-[#141414] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]"
+                className="w-full mt-[1.2rem] backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]"
               >
                 <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
                   <button
