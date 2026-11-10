@@ -172,7 +172,7 @@ function App() {
         </section>
 
         <section className="hidden lg:block relative isolate overflow-hidden pb-[10%] border-b-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc43]">
-          <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-95" />
+          <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-70" />
 
           <div className="absolute inset-0 -z-10 bg-linear-to-r from-[#111111]/50 to-[#111111dc] to-50%" />
 
@@ -211,25 +211,23 @@ function App() {
         </section>
       </div>
 
-      <main className='bg-radial-[at_50%_0%] bg-[#111111] from-[#191919] to-[#0f0f0f] to-100% relative'>
-        <div className="p-[5%_7%_1%_7%] relative">
+      <main className='bg-radial-[at_100%_0%] bg-[#1c1c1c] from-[#161616] to-[#100f0f] to-100% relative'>
+        <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%] relative">
           <hr className="text-[#6d6b6b] font-thin" />
         </div>
 
-        <div className="p-[4%_5%_4%]">
-          <div className="p-[0_1rem_0_1rem]">
-            <div className="">
-              <p className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">Characteristics</p>
-              <p className="text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore etillum laborum, accusamus vel velit!</p>
-            </div>
+        <div className="p-[0_7%_2rem_7%]">
+          <div className="">
+            <p className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">Characteristics</p>
+            <p className="text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore etillum laborum, accusamus vel velit!</p>
           </div>
         </div>
 
-        <section className="m-[1rem_8%_7rem] md:m-[1rem_7%_7rem]">
+        <section className="m-[1rem_8%_1rem] md:m-[1rem_7%_1rem]">
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
             <div data-aos="zoom-in">
               <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[#fdfcfc47] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] p-[10%]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[#fdfcfc47] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] p-[10%]">
                   <i className="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)] " />
                   <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Punctual</p>
                   <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicaboarchitecto nihil a, aspernatur quo quos neque laudantium nesciuntpariatur at?</p>
@@ -239,603 +237,357 @@ function App() {
 
             <div data-aos="zoom-in">
               <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
                   <i className="fa-regular fa-lightbulb text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">
-                    Motivation
-                  </p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                    consectetur minima sit optio ipsum fuga odit sint eos corrupti
-                    cum.
-                  </p>
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Motivation</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,consectetur minima sit optio ipsum fuga odit sint eos corrupticum.</p>
                 </div>
               </div>
             </div>
+
             <div data-aos="zoom-in">
               <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
                   <i className="fa-regular fa-cloud text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">
-                    Curiosity
-                  </p>
-                  <p></p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia
-                    tenetur esse nostrum ea aperiam possimus cupiditate deserunt
-                    consequatur itaque?
-                  </p>
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Curiosity</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quiatenetur esse nostrum ea aperiam possimus cupiditate deseruntconsequatur itaque?</p>
                 </div>
               </div>
             </div>
+
             <div data-aos="zoom-in">
               <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
                   <i className="fa-solid fa-users text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">
-                    Teamwork
-                  </p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                    odit nesciunt ratione dolorem soluta tempore accusantium quae ipsa
-                    minima fugiat!
-                  </p>
+                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Teamwork</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impeditodit nesciunt ratione dolorem soluta tempore accusantium quae ipsaminima fugiat!</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <div className="p-[1%_7%_5%_7%] relative">
+        <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%] relative">
           <hr className="text-[#6d6b6b] font-thin" />
         </div>
       </main>
 
-      <section className="pb-12 relative isolate overflow-hidden" id="about">
-        <div className="p-[7%_9%_7%] relative border-y-[clamp(0.0625rem,0.0536rem+0.0446vw,0.125rem)] border-[#fdfcfc43]">
-          <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-90" />
+      <section className="relative isolate overflow-hidden" id="about">
+        <div className="p-[7%_8.5%_7%]  relative border-y-[clamp(0.0625rem,0.0536rem+0.0446vw,0.125rem)] border-[#fdfcfc43]">
+          <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-75s" />
 
           <div className="absolute inset-0 -z-10 bg-linear-to-l from-[#111111]/50 to-[#111111dc] to-25%" />
 
-          <div className="">
+          <div className="relative">
             <p className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">About Me</p>
             <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sintobcaecati recusandae assumenda quod sequi eaque, nihil omnis ex utunde a dolorum possimus illum optio eos dolore est nostrum eum!Corporis, eligendi voluptatum quam aspernatur possimus amet temporaautem hic.</p>
           </div>
         </div>
 
-        <div className="p-[5%_7%_3%_7%] relative">
-          <hr className="text-[#6d6b6b] font-thin" />
-        </div>
+        <div className="bg-radial-[at_100%_0%] bg-[#1c1c1c] from-[#161616] to-[#100f0f] to-100% relative">
+          <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%] relative">
+            <hr className="text-[#6d6b6b] font-thin" />
+          </div>
 
-        <div className="text-center">
-          <div className="p-[1%_10%_1%_10%]">
-            <div className="">
-              <p className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">
-                Skills and Knowledge
-              </p>
-              <p className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">
-                UI / UX Designer • Front-end Developer • Responsive Web Performance
-              </p>
-            </div>
-            <div className="grid grid-cols-1 pt-3">
-              <div className="text-[clamp(1.25rem,0.7143rem+2.6786vw,5rem)]">
-                <i className="fa-brands fa-html5" />
-                <i className="fa-brands fa-css3-alt" />
-                <i className="fa-brands fa-square-js" />
-                <i className="fa-brands fa-tailwind-css" />
-                <i className="fa-brands fa-node-js" />
-                <i className="fa-brands fa-react" />
-                <i className="fa-brands fa-bootstrap" />
+          <div className="text-center">
+            <div className="p-[0_10%]">
+              <div className="">
+                <p className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">Skills and Knowledge</p>
+                <p className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">UI / UX Designer • Front-end Developer • Responsive Web Performance</p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-[0_10%_0_10%]">
-          <p className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)]">
-            Front-end development
-          </p>
-          <p className="text-[#7a7a7a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] font-black">
-            HTML • CSS • JavaScript
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 m-[1rem_12%] gap-[8%]">
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              HTML
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "95%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              CSS
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "90%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              JavaScript
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "55%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-[0_10%_0_10%]">
-          <p className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)]">
-            Software Framework
-          </p>
-          <p className="text-[#7a7a7a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] font-black">
-            Tailwind CSS • React.js • Node.js • Bootstrap
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 m-[1rem_12%] gap-[8%]">
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              Tailwind CSS
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "95%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              React.js
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "60%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              Node.js
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "50%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-[#a19f9f]">
-            <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">
-              Bootstrap
-            </div>
-            <div className="p-[0_10px]">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
-                <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                  <div
-                    className="h-full rounded bg-zinc-200"
-                    style={{ width: "80%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className="p-[6rem_7%_0_7%] relative">
-          <hr className="text-[#6d6b6b] font-thin" />
-        </div>
+              <div className="grid grid-cols-1 pt-3">
+                <div className="text-[clamp(1.25rem,0.7143rem+2.6786vw,5rem)]">
+                  <i className="fa-brands fa-html5" />
+                  <i className="fa-brands fa-css3-alt" />
+                  <i className="fa-brands fa-square-js" />
+                  <i className="fa-brands fa-tailwind-css" />
+                  <i className="fa-brands fa-node-js" />
+                  <i className="fa-brands fa-react" />
+                  <i className="fa-brands fa-bootstrap" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className="m-[6rem_7%_7rem] sm:mt-[7%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-brush text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
-                  UI / UX Designer
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
-                  minus fugit. Incidunt commodi eos quod a id
-                </p>
+          <div className="p-[2rem_10%]">
+            <p className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)]">Front-end development</p>
+            <p className="text-[#7a7a7a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] font-black">HTML • CSS • JavaScript</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 m-[0_12%_1rem] gap-[8%]">
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">HTML</div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "95%" }}/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">CSS</div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "90%" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">JavaScript</div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "55%" }} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-computer text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
-                  Front-end Developer
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
-                  minus fugit. Incidunt commodi eos quod a id
-                </p>
+
+          <div className="p-[2rem_10%_1rem]">
+            <p className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)]"> Software Framework </p>
+            <p className="text-[#7a7a7a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] font-black">Tailwind CSS • React.js • Node.js • Bootstrap</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 m-[0_12%_4rem] gap-[8%]">
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">Tailwind CSS</div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "95%" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]"> React.js </div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "60%" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">Node.js</div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "50%" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-[#a19f9f]">
+              <div className="mb-1 text-[clamp(0.75rem,0.6107rem+0.6964vw,1.725rem)]">Bootstrap</div>
+              <div className="p-[0_10px]">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
+                  <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
+                    <div className="h-full rounded bg-zinc-200" style={{ width: "80%" }} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
-                  Responsive Performance
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
-                  minus fugit. Incidunt commodi eos quod a id
-                </p>
+
+          <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%] relative">
+            <hr className="text-[#6d6b6b] font-thin" />
+          </div>
+
+          <div className="m-[1rem_7%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-solid fa-brush text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">UI / UX Designer</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-solid fa-computer text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Front-end Developer</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Responsive Performance</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="zoom-in">
+              <div className="contents">
+                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
+                  <i className="fa-solid fa-code-branch text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
+                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Version Control</p>
+                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
+                </div>
               </div>
             </div>
           </div>
-          <div data-aos="zoom-in">
-            <div className="contents">
-              <div className="bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                <i className="fa-solid fa-code-branch text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">
-                  Version Control
-                </p>
-                <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
-                  minus fugit. Incidunt commodi eos quod a id
-                </p>
-              </div>
-            </div>
+          
+          <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%]">
+            <hr className="text-[#454444] font-thin" />
           </div>
         </div>
       </section>
-      <div className="p-[2%_8%_2%_8%]">
-        <hr className="text-[#454444] font-thin" />
-      </div>
+
       <section id="projects" className="w-full">
-        <div className="w-full pb-[10%]">
-          <div className="p-[10%_8.5%_10%]">
-            <p className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">
-              Projects & Works
-            </p>
-            <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] pt-3">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-              cupiditate impedit corrupti dolorum repudiandae dignissimos repellat.
-              Ratione quam, quae incidunt aut vero sapiente illum, laudantium minima
-              ipsam praesentium provident fuga!
-            </p>
+        <div className="relative w-full">
+
+          <div className="p-[7%_8.5%_7%] relative border-y-[clamp(0.0625rem,0.0536rem+0.0446vw,0.125rem)] border-[#fdfcfc43]">
+            <img src="/src/img/banner.jpg" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-75s" />
+
+            <div className="absolute inset-0 -z-10 bg-linear-to-l from-[#111111]/50 to-[#111111dc] to-25%" />
+
+            <div className="relative">
+              <p className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">Projects & Works</p>
+              <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsacupiditate impedit corrupti dolorum repudiandae dignissimos repellat.Ratione quam, quae incidunt aut vero sapiente illum, laudantium minimaipsam praesentium provident fuga!</p>
+            </div>
           </div>
-          <div className="p-[0_11%]">
-            <div className="w-full">
-              <p className="font-black text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)]  leading-tight">
-                Ecoscapes
-              </p>
-              <div className="text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] text-[#d5d3d3] pt-2">
-                <ul className="flex flex-wrap gap-1.5 pt-[0.2rem] list-none">
-                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] p-[4px_6px]">
-                    HTML
-                  </li>
-                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] p-[4px_6px]">
-                    CSS
-                  </li>
-                  <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] p-[4px_6px]">
-                    JavaScript
-                  </li>
-                </ul>
-              </div>
-              <p className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_0_clamp(1rem,2vw,2rem)]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                laudantium incidunt voluptas.
-              </p>
-              <div
-                data-gallery=""
-                className="w-full backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]"
-              >
-                <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
-                  <button
-                    type="button"
-                    data-prev=""
-                    aria-label="Previous image"
-                    className="hidden md:flex order-2 sm:order-1 btn btn-circle shrink-0 min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all"
-                  >
-                    ❮
-                  </button>
-                  <div
-                    data-track=""
-                    tabIndex={0}
-                    aria-label="Ecoscapes screenshots"
-                    className="order-1 sm:order-2 carousel w-full sm:w-auto sm:flex-1 min-w-0 overflow-x-auto overscroll-x-contain rounded-sm focus-visible:outline-2 focus-visible:outline-white"
-                  >
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/Ecoscapes1.png"
-                        alt="Ecoscapes slide 1"
-                        width={1920}
-                        height={1080}
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/Ecoscapes2.png"
-                        alt="Ecoscapes slide 2"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/Ecoscapes3.png"
-                        alt="Ecoscapes slide 3"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/Ecoscapes4.png"
-                        alt="Ecoscapes slide 4"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/Ecoscapes5.png"
-                        alt="Ecoscapes slide 5"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/Ecoscapes6.png"
-                        alt="Ecoscapes slide 6"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    data-next=""
-                    aria-label="Next image"
-                    className="hidden md:flex order-3 shrink-0 btn btn-circle min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all"
-                  >
-                    ❯
-                  </button>
+
+          <div className="bg-radial-[at_100%_0%] bg-[#1c1c1c] from-[#161616] to-[#100f0f] to-100% relative">
+            <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%]">
+              <hr className="text-[#454444] font-thin" />
+            </div>
+
+            <div className="p-[0_11%]">
+              <div className="w-full">
+                <p className="font-black text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)]  leading-tight">Ecoscapes</p>
+                <div className="text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] text-[#d5d3d3] p-[0.75rem_1%_0]">
+                  <ul className="flex flex-wrap gap-1.5 pt-[0.2rem] list-none">
+                    <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] p-[4px_6px]">HTML</li>
+                    <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] p-[4px_6px]">CSS</li>
+                    <li className="rounded-md backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] p-[4px_6px]">JavaScript</li>
+                  </ul>
                 </div>
-                <p
-                  data-counter=""
-                  aria-live="polite"
-                  className="hidden md:block text-right text-[#9b9a9a] text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] pt-2"
-                >
-                  1 / 6
-                </p>
-                <div
-                  data-thumbs=""
-                  className="mt-2 flex gap-[clamp(0.25rem,0.1rem+0.6vw,0.75rem)] overflow-x-auto pb-1 scrollbar-thin"
-                >
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 1"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/Ecoscapes1.png"
-                      alt="Thumbnail 1"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 2"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/Ecoscapes2.png"
-                      alt="Thumbnail 2"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 3"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/Ecoscapes3.png"
-                      alt="Thumbnail 3"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 4"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/Ecoscapes4.png"
-                      alt="Thumbnail 4"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 5"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/Ecoscapes5.png"
-                      alt="Thumbnail 5"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 6"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/Ecoscapes6.png"
-                      alt="Thumbnail 6"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
+
+                <p className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_4%_clamp(1rem,2vw,2rem)_4%]"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi corrupti veritatis sequi sit eos ipsam? Quaerat eligendi ipsum fuga possimus architecto omnis dolores, iusto nemo perferendis neque? Cum dicta cumque consequuntur sequi incidunt mollitia delectus necessitatibus aliquid, aut voluptatibus!</p>
+
+                <div data-gallery="" className="w-full backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]">
+                  <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
+                    <button type="button" data-prev="" aria-label="Previous image" className="hidden md:flex order-2 sm:order-1 btn btn-circle shrink-0 min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all" >❮</button>
+
+                    <div data-track="" tabIndex={0} aria-label="Ecoscapes screenshots" className="order-1 sm:order-2 carousel w-full sm:w-auto sm:flex-1 min-w-0 overflow-x-auto overscroll-x-contain rounded-sm focus-visible:outline-2 focus-visible:outline-white" >
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/Ecoscapes1.png" alt="Ecoscapes slide 1" width={1920} height={1080} className="w-full h-auto object-cover aspect-video" />
+                      </div>
+
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/Ecoscapes2.png" alt="Ecoscapes slide 2" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/Ecoscapes3.png" alt="Ecoscapes slide 3" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/Ecoscapes4.png" alt="Ecoscapes slide 4" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/Ecoscapes5.png" alt="Ecoscapes slide 5" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/Ecoscapes6.png" alt="Ecoscapes slide 6" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+                    </div>
+                    <button type="button" data-next="" aria-label="Next image" className="hidden md:flex order-3 shrink-0 btn btn-circle min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">❯</button>
+                  </div>
+
+                  <p data-counter="" aria-live="polite" className="hidden md:block text-right text-[#9b9a9a] text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] pt-2">1 / 6</p>
+                  <div data-thumbs="" className="mt-2 flex gap-[clamp(0.25rem,0.1rem+0.6vw,0.75rem)] overflow-x-auto pb-1 scrollbar-thin" >
+                    <a href="#" data-thumb="" aria-label="Show image 1" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/Ecoscapes1.png" alt="Thumbnail 1" loading="lazy" className="w-full object-cover" />
+                    </a>
+
+                    <a href="#" data-thumb="" aria-label="Show image 2" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/Ecoscapes2.png" alt="Thumbnail 2" loading="lazy" className="w-full object-cover" />
+                    </a>
+
+                    <a href="#" data-thumb="" aria-label="Show image 3" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/Ecoscapes3.png" alt="Thumbnail 3" loading="lazy" className="w-full object-cover" />
+                    </a>
+
+                    <a href="#" data-thumb="" aria-label="Show image 4" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/Ecoscapes4.png" alt="Thumbnail 4" loading="lazy" className="w-full object-cover" />
+                    </a>
+
+                    <a href="#" data-thumb="" aria-label="Show image 5" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/Ecoscapes5.png" alt="Thumbnail 5" loading="lazy" className="w-full object-cover" />
+                    </a>
+
+                    <a href="#" data-thumb="" aria-label="Show image 6" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/Ecoscapes6.png" alt="Thumbnail 6" loading="lazy" className="w-full object-cover" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full">
+                <p className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)]  leading-tight">Other design works</p>
+                <p className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_4%_clamp(1rem,2vw,2rem)_4%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit asperiores labore error at ut quia! Aspernatur pariatur nulla quas voluptas.</p>
+                <div data-gallery="" className="w-full mt-[1.2rem] backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#0f0e0e87] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]" >
+                  <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
+                    <button type="button" data-prev="" aria-label="Previous image" className="hidden md:flex order-2 sm:order-1 btn btn-circle shrink-0 min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">❮</button>
+
+                    <div data-track="" tabIndex={0} aria-label="Other design works" className="order-1 sm:order-2 carousel w-full sm:w-auto sm:flex-1 min-w-0 overflow-x-auto overscroll-x-contain rounded-sm focus-visible:outline-2 focus-visible:outline-white">
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/other1.png" alt="Other design work 1" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+
+                      <div className="carousel-item w-full">
+                        <img src="./src/img/other2.png" alt="Other design work 2" width={1920} height={1080} loading="lazy" className="w-full h-auto object-cover aspect-video" />
+                      </div>
+                    </div>
+
+                    <button type="button" data-next="" aria-label="Next image" className="hidden md:flex order-3 shrink-0 btn btn-circle min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all" >❯</button>
+                  </div>
+
+                  <p data-counter="" aria-live="polite" className="hidden md:block text-right text-[#9b9a9a] text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] pt-2" > 1 / 2 </p>
+
+                  <div data-thumbs="" className="mt-2 flex gap-[clamp(0.25rem,0.1rem+0.6vw,0.75rem)] overflow-x-auto pb-1 scrollbar-thin" >
+                    <a href="#" data-thumb="" aria-label="Show image 1" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white">
+                      <img src="./src/img/other1.png" alt="Thumbnail 1" loading="lazy" className="w-full object-cover" />
+                    </a>
+
+                    <a href="#" data-thumb="" aria-label="Show image 2" className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white" >
+                      <img src="./src/img/other2.png" alt="Thumbnail 2" loading="lazy" className="w-full object-cover"/>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="w-full">
-              <p className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)]  leading-tight">
-                Other design works
-              </p>
-              <p className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[0,1rem_0_clamp(1rem,2vw,2rem),1rem_0_clamp(1rem,2vw,2rem)]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <div
-                data-gallery=""
-                className="w-full mt-[1.2rem] backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a] to-[#0e0e0e] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]"
-              >
-                <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
-                  <button
-                    type="button"
-                    data-prev=""
-                    aria-label="Previous image"
-                    className="hidden md:flex order-2 sm:order-1 btn btn-circle shrink-0 min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all"
-                  >
-                    ❮
-                  </button>
-                  <div
-                    data-track=""
-                    tabIndex={0}
-                    aria-label="Other design works"
-                    className="order-1 sm:order-2 carousel w-full sm:w-auto sm:flex-1 min-w-0 overflow-x-auto overscroll-x-contain rounded-sm focus-visible:outline-2 focus-visible:outline-white"
-                  >
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/other1.png"
-                        alt="Other design work 1"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                    <div className="carousel-item w-full">
-                      <img
-                        src="./src/img/other2.png"
-                        alt="Other design work 2"
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        className="w-full h-auto object-cover aspect-video"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    data-next=""
-                    aria-label="Next image"
-                    className="hidden md:flex order-3 shrink-0 btn btn-circle min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all"
-                  >
-                    ❯
-                  </button>
-                </div>
-                <p
-                  data-counter=""
-                  aria-live="polite"
-                  className="hidden md:block text-right text-[#9b9a9a] text-[clamp(0.625rem,0.4429rem+0.9107vw,1.9rem)] pt-2"
-                >
-                  1 / 2
-                </p>
-                <div
-                  data-thumbs=""
-                  className="mt-2 flex gap-[clamp(0.25rem,0.1rem+0.6vw,0.75rem)] overflow-x-auto pb-1 scrollbar-thin"
-                >
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 1"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/other1.png"
-                      alt="Thumbnail 1"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    data-thumb=""
-                    aria-label="Show image 2"
-                    className="shrink-0 w-[clamp(7rem,4.4286rem+12.8571vw,25rem)] h-auto aspect-video overflow-hidden border border-white/20 opacity-70 hover:opacity-100 hover:border-white/60 aria-current:opacity-100 aria-current:border-white transition-all focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <img
-                      src="./src/img/other2.png"
-                      alt="Thumbnail 2"
-                      loading="lazy"
-                      className="w-full object-cover"
-                    />
-                  </a>
-                </div>
-              </div>
+
+            <div className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%]">
+              <hr className="text-[#454444] font-thin" />
             </div>
           </div>
         </div>
       </section>
+
       <footer
         className="footer p-[clamp(2rem,1.3571rem+3.2143vw,6.5rem)] bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47] grid grid-cols-1 sm:grid-cols-2 sm:gap-[10%] text-[#cbcaca]"
         id="contacts"
