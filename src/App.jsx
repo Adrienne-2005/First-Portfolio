@@ -85,9 +85,44 @@ function initGallery(gallery, signal) {
   render(0);
 }
 
+function initProgressBars(signal) {
+  var bars = document.getElementsByClassName("progress-fill");
+  if (!bars.length) return;
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          var targetBar = entries[i].target;
+          var targetWidth = targetBar.getAttribute("data-width") || "95%";
+
+          (function (bar, width) {
+            setTimeout(function () {
+              bar.style.width = width;
+            }, 200);
+          })(targetBar, targetWidth);
+
+          observer.unobserve(targetBar);
+        }
+      }
+    },
+    { threshold: 0.2 }
+  );
+
+  for (var j = 0; j < bars.length; j++) {
+    observer.observe(bars[j]);
+  }
+
+  if (signal) {
+    signal.addEventListener("abort", function () {
+      observer.disconnect();
+    });
+  }
+}
+
 function App() {
   useEffect(function () {
-    AOS.init({ duration: 400, once: true, disable: 'mobile'});
+    AOS.init({ duration: 400, once: true, disable: 'mobile' });
     AOS.refresh();
 
     var controller = new AbortController();
@@ -97,7 +132,11 @@ function App() {
       initGallery(galleries[g], controller.signal);
     }
 
-    return function () { controller.abort(); }; // removes all listeners
+    initProgressBars(controller.signal);
+
+    return function () {
+      controller.abort();
+    };
   }, []);
 
   return (
@@ -187,14 +226,12 @@ function App() {
                   <p className="text-[clamp(2rem,0.1333rem+2.9167vw,4.8rem)] font-bold">Xyrill Adrienne Combes</p>
                 </div>
 
-                <div data-aos="fade-left" data-aos-duration="1000">
-                  <div className="text-[clamp(3rem,-0.2rem+5vw,7.8rem)] font-bold mt-[2.5%]">
-                    <p>Front-end</p>
-                    <p>Developer & Designer</p>
-                  </div>
+                <div className="text-[clamp(3rem,-0.2rem+5vw,7.8rem)] font-bold mt-[2.5%]">
+                  <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">Front-end</p>
+                  <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">Developer & Designer</p>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div data-aos="fade-up" data-aos-duration="1000"data-aos-delay="150" >
                   <p className="text-[clamp(1.1rem,0.2333rem+1.3542vw,2.4rem)] mt-[2.5%] text-[#A2A1A1]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, nulla. Recusandae obcaecati maiores natus non consequatur quae cupiditate, ipsa odit.</p>
 
                   <div className="mt-[clamp(2rem,0.3333rem+2.6042vw,4.5rem)] pl-[3%]">
@@ -322,7 +359,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "95%" }}/>
+                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "95%" }}/>
                   </div>
                 </div>
               </div>
@@ -333,7 +370,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "90%" }} />
+                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "90%" }} />
                   </div>
                 </div>
               </div>
@@ -344,7 +381,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "55%" }} />
+                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "55%" }} />
                   </div>
                 </div>
               </div>
@@ -373,7 +410,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "60%" }} />
+                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "60%" }} />
                   </div>
                 </div>
               </div>
@@ -384,7 +421,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "50%" }} />
+                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "50%" }} />
                   </div>
                 </div>
               </div>
@@ -395,7 +432,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "80%" }} />
+                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "80%" }} />
                   </div>
                 </div>
               </div>
@@ -441,7 +478,7 @@ function App() {
               <div className="contents">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
                   <i className="fa-solid fa-code-branch text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Web Version Control</p>
+                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Version Control</p>
                   <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1 grow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
                 </div>
               </div>

@@ -1251,9 +1251,6 @@
       translate: 0 1px;
     }
   }
-  .animate-tada {
-    animation: tada 1s ease-in-out both;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -1277,9 +1274,6 @@
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -1307,9 +1301,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-\[1\%\] {
-    gap: 1%;
   }
   .gap-\[1\.5\%\] {
     gap: 1.5%;
@@ -1525,10 +1516,6 @@
     --tw-gradient-to: #0e0e0e6a;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .to-\[\#0f0e0e87\] {
-    --tw-gradient-to: #0f0e0e87;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
   .to-\[\#0f0f0f62\] {
     --tw-gradient-to: #0f0f0f62;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1539,10 +1526,6 @@
   }
   .to-\[\#0f0f0f\] {
     --tw-gradient-to: #0f0f0f;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[\#1e1c1c87\] {
-    --tw-gradient-to: #1e1c1c87;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-\[\#100f0f\] {
@@ -1563,10 +1546,6 @@
   }
   .to-\[\#171717\] {
     --tw-gradient-to: #171717;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[\#12111187\] {
-    --tw-gradient-to: #12111187;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-\[\#17171781\] {
@@ -1598,20 +1577,11 @@
   .p-\[0\.75rem_1\%_0\] {
     padding: 0.75rem 1% 0;
   }
-  .p-\[0_2\%\] {
-    padding: 0 2%;
-  }
   .p-\[0_3\%_0_3\%\] {
     padding: 0 3% 0 3%;
   }
-  .p-\[0_7\%\] {
-    padding: 0 7%;
-  }
   .p-\[0_7\%_2rem_7\%\] {
     padding: 0 7% 2rem 7%;
-  }
-  .p-\[0_8\%\] {
-    padding: 0 8%;
   }
   .p-\[0_9\%\] {
     padding: 0 9%;
@@ -1622,9 +1592,6 @@
   .p-\[0_10px\] {
     padding: 0 10px;
   }
-  .p-\[0_11\%\] {
-    padding: 0 11%;
-  }
   .p-\[1\.25\%_3\.5\%\] {
     padding: 1.25% 3.5%;
   }
@@ -1634,17 +1601,11 @@
   .p-\[1rem_5\%_8\.5\%_5\%\] {
     padding: 1rem 5% 8.5% 5%;
   }
-  .p-\[1rem_10\%\] {
-    padding: 1rem 10%;
-  }
   .p-\[2\%\] {
     padding: 2%;
   }
   .p-\[2rem_10\%\] {
     padding: 2rem 10%;
-  }
-  .p-\[2rem_10\%_1rem\] {
-    padding: 2rem 10% 1rem;
   }
   .p-\[3\%\] {
     padding: 3%;
@@ -1691,9 +1652,6 @@
   .px-\[2\%\] {
     padding-inline: 2%;
   }
-  .px-\[5\%\] {
-    padding-inline: 5%;
-  }
   .py-\[0\.5\%\] {
     padding-block: 0.5%;
   }
@@ -1711,9 +1669,6 @@
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
-  }
-  .pt-5 {
-    padding-top: calc(var(--spacing) * 5);
   }
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);
@@ -2690,41 +2645,6 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@keyframes tada {
-  0% {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(0.9) rotate(-3deg);
-  }
-  20% {
-    transform: scale(0.9) rotate(-3deg);
-  }
-  30% {
-    transform: scale(1.1) rotate(3deg);
-  }
-  40% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(3deg);
-  }
-  60% {
-    transform: scale(1.1) rotate(-3deg);
-  }
-  70% {
-    transform: scale(1.1) rotate(3deg);
-  }
-  80% {
-    transform: scale(1.1) rotate(3deg);
-  }
-  90% {
-    transform: scale(1.1) rotate(3deg);
-  }
-  100% {
-    transform: scale(1) rotate(0);
-  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
