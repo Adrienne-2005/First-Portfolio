@@ -23,6 +23,7 @@
     --radius-sm: 0.25rem;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --blur-sm: 8px;
     --blur-md: 12px;
     --blur-xl: 24px;
@@ -1948,6 +1949,10 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
   @layer daisyui.l1.l2 {
     .btn-sm {
       --fontsize: 0.75rem;
@@ -2139,6 +2144,14 @@
       opacity: 0;
     }
   }
+}
+[data-aos="bar-fill"] {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition-property: transform;
+}
+[data-aos="bar-fill"].aos-animate {
+  transform: scaleX(1);
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
@@ -2626,6 +2639,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -2700,6 +2717,7 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
+      --tw-ease: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;

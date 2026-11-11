@@ -85,44 +85,13 @@ function initGallery(gallery, signal) {
   render(0);
 }
 
-function initProgressBars(signal) {
-  var bars = document.getElementsByClassName("progress-fill");
-  if (!bars.length) return;
-
-  var observer = new IntersectionObserver(
-    function (entries) {
-      for (var i = 0; i < entries.length; i++) {
-        if (entries[i].isIntersecting) {
-          var targetBar = entries[i].target;
-          var targetWidth = targetBar.getAttribute("data-width") || "95%";
-
-          (function (bar, width) {
-            setTimeout(function () {
-              bar.style.width = width;
-            }, 200);
-          })(targetBar, targetWidth);
-
-          observer.unobserve(targetBar);
-        }
-      }
-    },
-    { threshold: 0.2 }
-  );
-
-  for (var j = 0; j < bars.length; j++) {
-    observer.observe(bars[j]);
-  }
-
-  if (signal) {
-    signal.addEventListener("abort", function () {
-      observer.disconnect();
-    });
-  }
-}
-
 function App() {
   useEffect(function () {
-    AOS.init({ duration: 400, once: true, disable: 'mobile' });
+    AOS.init({ 
+      duration: 400, 
+      once: true, 
+      disable: 'mobile', 
+      easing: 'ease-out-cubic' });
     AOS.refresh();
 
     var controller = new AbortController();
@@ -131,8 +100,6 @@ function App() {
     for (var g = 0; g < galleries.length; g++) {
       initGallery(galleries[g], controller.signal);
     }
-
-    initProgressBars(controller.signal);
 
     return function () {
       controller.abort();
@@ -359,7 +326,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "95%" }}/>
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "95%" }}/>
                   </div>
                 </div>
               </div>
@@ -370,7 +337,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "90%" }} />
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "90%" }} />
                   </div>
                 </div>
               </div>
@@ -381,7 +348,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "55%" }} />
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "55%" }} />
                   </div>
                 </div>
               </div>
@@ -399,7 +366,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="h-full rounded bg-zinc-200" style={{ width: "95%" }} />
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "95%" }} />
                   </div>
                 </div>
               </div>
@@ -410,7 +377,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "60%" }} />
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "60%" }} />
                   </div>
                 </div>
               </div>
@@ -421,7 +388,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "50%" }} />
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "50%" }} />
                   </div>
                 </div>
               </div>
@@ -432,7 +399,7 @@ function App() {
               <div className="p-[0_10px]" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="100">
                 <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] border border-[#fdfcfc47] p-[clamp(0.4375rem,0.3661rem+0.3571vw,0.9375rem)] mt-[clamp(0.375rem,0.25rem+0.625vw,1.25rem)]">
                   <div className="h-[clamp(0.75rem,0.6143rem+0.6786vw,1.7rem)] w-full overflow-hidden rounded bg-zinc-700/60">
-                    <div className="progress-fill h-full rounded bg-zinc-200" style={{ width: "80%" }} />
+                    <div data-aos="bar-fill" data-aos-duration="1200" data-aos-delay="300" className="h-full rounded bg-zinc-200" style={{ width: "80%" }} />
                   </div>
                 </div>
               </div>

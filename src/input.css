@@ -10,3 +10,13 @@
     --font-poppins: "Poppins", sans-serif;
     --font-roboto: "Roboto", sans-serif;
 }
+
+[data-aos="bar-fill"] {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-property: transform;
+}
+
+[data-aos="bar-fill"].aos-animate {
+    transform: scaleX(1);
+}
