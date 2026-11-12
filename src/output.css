@@ -1017,6 +1017,9 @@
   .m-1 {
     margin: var(--spacing);
   }
+  .m-\[0_10rem\] {
+    margin: 0 10rem;
+  }
   .m-\[0_12\%_1rem\] {
     margin: 0 12% 1rem;
   }
@@ -1183,6 +1186,9 @@
   .w-\[clamp\(8\.75rem\,5\.7143rem\+15\.1786vw\,13rem\)\] {
     width: clamp(8.75rem, 5.7143rem + 15.1786vw, 13rem);
   }
+  .w-\[clamp\(25rem\,2\.3333rem\+35\.4167vw\,59rem\)\] {
+    width: clamp(25rem, 2.3333rem + 35.4167vw, 59rem);
+  }
   .w-auto {
     width: auto;
   }
@@ -1207,6 +1213,9 @@
       translate: 0 1px;
     }
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -1230,6 +1239,24 @@
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-\[1\.5fr\] {
+    grid-template-columns: 1.5fr;
+  }
+  .grid-cols-\[1fr_2fr\] {
+    grid-template-columns: 1fr 2fr;
+  }
+  .grid-cols-\[5rem\] {
+    grid-template-columns: 5rem;
+  }
+  .grid-cols-\[5rem_5rem\] {
+    grid-template-columns: 5rem 5rem;
+  }
+  .grid-cols-\[10rem\] {
+    grid-template-columns: 10rem;
+  }
+  .grid-cols-\[100\%\] {
+    grid-template-columns: 100%;
   }
   .flex-col {
     flex-direction: column;
@@ -1261,6 +1288,12 @@
   .gap-\[2\%\] {
     gap: 2%;
   }
+  .gap-\[2rem\] {
+    gap: 2rem;
+  }
+  .gap-\[5rem\] {
+    gap: 5rem;
+  }
   .gap-\[8\%\] {
     gap: 8%;
   }
@@ -1288,6 +1321,12 @@
   }
   .overflow-x-auto {
     overflow-x: auto;
+  }
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .overscroll-x-contain {
     overscroll-behavior-x: contain;
@@ -1513,6 +1552,9 @@
   .p-\[0_3\%_0_3\%\] {
     padding: 0 3% 0 3%;
   }
+  .p-\[0_5rem\] {
+    padding: 0 5rem;
+  }
   .p-\[0_7\%_2rem_7\%\] {
     padding: 0 7% 2rem 7%;
   }
@@ -1525,6 +1567,9 @@
   .p-\[0_10px\] {
     padding: 0 10px;
   }
+  .p-\[0_10rem\] {
+    padding: 0 10rem;
+  }
   .p-\[1\.25\%_3\.5\%\] {
     padding: 1.25% 3.5%;
   }
@@ -1534,6 +1579,9 @@
   .p-\[1rem_5\%_8\.5\%_5\%\] {
     padding: 1rem 5% 8.5% 5%;
   }
+  .p-\[2\%\] {
+    padding: 2%;
+  }
   .p-\[2rem_10\%\] {
     padding: 2rem 10%;
   }
@@ -1542,6 +1590,9 @@
   }
   .p-\[5\%\] {
     padding: 5%;
+  }
+  .p-\[7\%\] {
+    padding: 7%;
   }
   .p-\[7\%_8\.5\%_7\%\] {
     padding: 7% 8.5% 7%;
@@ -1570,6 +1621,18 @@
   .p-\[clamp\(2rem\,1\.3571rem\+3\.2143vw\,6\.5rem\)\] {
     padding: clamp(2rem, 1.3571rem + 3.2143vw, 6.5rem);
   }
+  .px-\[2\%\] {
+    padding-inline: 2%;
+  }
+  .px-\[3\%\] {
+    padding-inline: 3%;
+  }
+  .px-\[4\%\] {
+    padding-inline: 4%;
+  }
+  .px-\[5\%\] {
+    padding-inline: 5%;
+  }
   .pt-1 {
     padding-top: var(--spacing);
   }
@@ -1591,8 +1654,14 @@
   .pt-\[clamp\(11rem\,4\.3333rem\+10\.4167vw\,21rem\)\] {
     padding-top: clamp(11rem, 4.3333rem + 10.4167vw, 21rem);
   }
+  .pr-\[2\%\] {
+    padding-right: 2%;
+  }
   .pr-\[5\%\] {
     padding-right: 5%;
+  }
+  .pr-\[10\%\] {
+    padding-right: 10%;
   }
   .pb-1 {
     padding-bottom: var(--spacing);
@@ -1723,8 +1792,20 @@
   .text-\[\#9b9a9a\] {
     color: #9b9a9a;
   }
+  .text-\[\#9b9999\] {
+    color: #9b9999;
+  }
+  .text-\[\#282727\] {
+    color: #282727;
+  }
   .text-\[\#454444\] {
     color: #454444;
+  }
+  .text-\[\#525151\] {
+    color: #525151;
+  }
+  .text-\[\#636262\] {
+    color: #636262;
   }
   .text-\[\#A2A1A1\] {
     color: #A2A1A1;
@@ -1755,6 +1836,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-20 {
     opacity: 20%;
@@ -1982,6 +2066,9 @@
       opacity: 0;
     }
   }
+}
+html, body {
+  overflow-x: clip;
 }
 [data-aos="bar-fill"] {
   transform: scaleX(0);
@@ -2261,6 +2348,26 @@
     filter: blur(1.5rem);
   }
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -2514,6 +2621,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;

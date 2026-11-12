@@ -3,6 +3,10 @@
 @import "tailwind-animations";
 @plugin "daisyui";
 
+html, body {
+    overflow-x: clip;
+}
+
 @theme {
     --font-archivo: "Archivo Black", sans-serif;
     --font-bebas: "Bebas Neue", sans-serif;

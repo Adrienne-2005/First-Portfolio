@@ -170,7 +170,7 @@ function App() {
                 <div className="pb-8">
                   <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#212020] to-[#131313] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
                     <div className="flex">
-                      <p className="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">Download CV</p>
+                      <p className="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">View resume</p>
                       <i className="fa-regular fa-file ml-2 mt-1 text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)]" />
                     </div>
                   </button>
@@ -186,28 +186,29 @@ function App() {
           <div className="absolute inset-0 -z-10 bg-linear-to-r from-[#111111]/50 to-[#111111dc] to-50%" />
 
           <div className="relative">
-            <div className="grid grid-cols-2 relative pt-[clamp(11rem,4.3333rem+10.4167vw,21rem)] pr-[5%]">
+            <div className="grid grid-cols-2 relative pt-[clamp(11rem,4.3333rem+10.4167vw,21rem)]">
               <div data-aos="fade-right" data-aos-duration="1000" className="flex justify-center items-center">
-                <i className="fa-regular fa-circle-user text-[clamp(20rem,0rem+31.25vw,50rem)]"/>
+                {/* <i className="fa-regular fa-circle-user text-[clamp(20rem,0rem+31.25vw,50rem)]"/> */}
+                <img src="/src/img/Desktop-pfp.gif" alt="profile" class="w-[clamp(25rem,2.3333rem+35.4167vw,59rem)] h-auto" />
               </div>
 
-              <div>
+              <div className='overflow-x-hidden'>
                 <div className="text-[#B7B7B7]" data-aos="fade-left" data-aos-duration="1000">
                   <p className="text-[clamp(2rem,0.1333rem+2.9167vw,4.8rem)] font-bold">Xyrill Adrienne Combes</p>
                 </div>
 
-                <div className="text-[clamp(3rem,-0.2rem+5vw,7.8rem)] font-bold mt-[2.5%]">
+                <div className="text-[clamp(3rem,-0.2rem+5vw,7.8rem)] font-bold mt-[2.5%] pr-[2%]">
                   <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">Front-end</p>
                   <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">Developer & Designer</p>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000"data-aos-delay="150" >
+                <div data-aos="fade-up" data-aos-duration="1000"data-aos-delay="150" className=' pr-[10%]'>
                   <p className="text-[clamp(1.1rem,0.2333rem+1.3542vw,2.4rem)] mt-[2.5%] text-[#A2A1A1]">Hello! I am a trainee and apprentice programmer willing and interested to learn new things, adapting design creativity, and exploring more unique ideas.</p>
 
                   <div className="mt-[clamp(2rem,0.3333rem+2.6042vw,4.5rem)] pl-[3%]">
                     <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a7c] to-[#0e0e0e6a] p-[clamp(0.85rem,0.0833rem+1.1979vw,2rem)] cursor-pointer">
                       <div className="flex text-[clamp(1.25rem,0.0833rem+1.8229vw,3rem)]">
-                        <p className="font-black ml-1">Download CV</p>
+                        <p className="font-black ml-1">View resume</p>
                         <i className="fa-regular fa-file ml-2 mt-1" />
                       </div>
                     </button>
@@ -248,7 +249,7 @@ function App() {
 
           <div className="relative">
             <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">About Me</p>
-            <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sintobcaecati recusandae assumenda quod sequi eaque, nihil omnis ex utunde a dolorum possimus illum optio eos dolore est nostrum eum!Corporis, eligendi voluptatum quam aspernatur possimus amet temporaautem hic.</p>
+            <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1]">Passionate about creating clean, responsive, and user-friendly websites with a focus on design and functionality. Skilled in turning ideas into interactive web experiences using modern front-end technologies. Dedicated to improving coding skills, learning new tools, and building websites that provide smooth and engaging experiences for users.</p>
           </div>
         </div>
 
@@ -391,7 +392,7 @@ function App() {
 
             <div className="relative">
               <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(1.8125rem,0.9286rem+4.4196vw,8rem)] font-black">Projects & Works</p>
-              <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsacupiditate impedit corrupti dolorum repudiandae dignissimos repellat.Ratione quam, quae incidunt aut vero sapiente illum, laudantium minimaipsam praesentium provident fuga!</p>
+              <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] pt-3">Showcase completed projects including the scrapped works that highlight front-end development skills. Each work reflects attention to detail, responsive layouts, and user-friendly features, demonstrating the ability to transform ideas into visually appealing websites.</p>
             </div>
           </div>
 
@@ -411,7 +412,7 @@ function App() {
                   </ul>
                 </div>
 
-                <p data-aos="fade-up" data-aos-duration="500" className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_4%_clamp(1rem,2vw,2rem)_4%]"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi corrupti veritatis sequi sit eos ipsam? Quaerat eligendi ipsum fuga possimus architecto omnis dolores, iusto nemo perferendis neque? Cum dicta cumque consequuntur sequi incidunt mollitia delectus necessitatibus aliquid, aut voluptatibus!</p>
+                <p data-aos="fade-up" data-aos-duration="500" className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_4%_clamp(1rem,2vw,2rem)_4%]"> Ecoscapes is the tourist location gallery websites composed of beautiful and breathtaking sceneries in Luzon, Visayas and Mindanao. Each destination has an information included the location, ways to go and recommendation for the tourist once they will go on the tourist spots. <a href="https://github.com/Adrienne-2005/Webstruct-Ecosapes" target="_blank" class="underline text-[#636262]">See repositories</a></p>
 
                 <div data-aos="fade-up" data-aos-duration="500" data-gallery="" className="w-full backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#18171787] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]">
                   <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
@@ -476,7 +477,7 @@ function App() {
 
               <div className="w-full">
                 <p data-aos="fade-up" data-aos-duration="500" className="text-[#e6e4e4] font-black pt-[5%] text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)]  leading-tight">Other design works</p>
-                <p data-aos="fade-up" data-aos-duration="500" className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_4%_clamp(1rem,2vw,2rem)_4%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit asperiores labore error at ut quia! Aspernatur pariatur nulla quas voluptas.</p>
+                <p data-aos="fade-up" data-aos-duration="500" className="text-[#9b9a9a] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] p-[1rem_4%_clamp(1rem,2vw,2rem)_4%]">An additional designs and scrapped works that created a long time ago. These projects reflect the design process, willingness to try new approaches, and continuous growth in creating visually appealing and functional web experiences.</p>
                 <div data-aos="fade-up" data-aos-duration="500" data-gallery="" className="w-full mt-[1.2rem] backdrop-blur-[3px] border border-solid border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1abd] to-[#18171787] rounded-sm p-[clamp(0.375rem,0.1rem+1.4vw,1.25rem)]" >
                   <div className="flex flex-wrap items-center justify-between gap-[clamp(0.375rem,0.1rem+1vw,1rem)]">
                     <button type="button" data-prev="" aria-label="Previous image" className="hidden md:flex order-2 sm:order-1 btn btn-circle shrink-0 min-h-0 p-0 h-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] w-[clamp(1.75rem,1.2rem+2.2vw,3.5rem)] text-[clamp(0.75rem,0.5rem+1vw,1.5rem)] backdrop-blur-md border border-white/40 bg-linear-to-b from-[#22222274] to-[#17171781] text-white hover:border-white hover:scale-105 transition-all">❮</button>
@@ -543,7 +544,7 @@ function App() {
         <div className="flex flex-col justify-between text-center sm:text-left">
           <div data-aos="fade-up" data-aos-duration="500">
             <p className="text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] font-black text-white tracking-wide">Social Media</p>
-            <p className="text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] text-[#a4a2a2] leading-relaxed p-[clamp(0.5rem,0.1429rem+1.7857vw,3rem)_0.25rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vitaeipsum iure repellendus aspernatur!</p>
+            <p className="text-[clamp(0.75rem,0.6179rem+0.6607vw,1.675rem)] text-[#a4a2a2] leading-relaxed p-[clamp(0.5rem,0.1429rem+1.7857vw,3rem)_0.25rem]">Stay connected through social media platforms where updates, creative works, and development projects are shared.</p>
           </div>
 
           <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="25" className="flex w-full items-center justify-center sm:justify-start gap-4 text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] text-[#faf9f9] text-center sm:text-left">
