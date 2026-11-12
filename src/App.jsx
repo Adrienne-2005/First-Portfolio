@@ -92,7 +92,7 @@ function App() {
     AOS.init({ 
       duration: 400, 
       once: true, 
-      disable: 'mobile', 
+      // disable: 'mobile', 
       mirror: true,
       easing: 'ease-out-cubic' });
     AOS.refresh();
@@ -150,24 +150,24 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="p-[5%] flex justify-center items-center">
-              <i className="fa-regular fa-circle-user text-[clamp(10rem,2.8412rem+35.7942vw,20rem)]" />
+            <div data-aos="zoom-in" data-aos-duration="750" className="mx-auto w-fit flex justify-center items-center rounded-full backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#21202082] to-[#131313a2]">
+              <img src="/src/img/circle-pfp.png" alt="profile" className="w-[clamp(10rem,2.8412rem+35.7942vw,20rem)] rounded-full"/>
             </div>
 
             <div className="">
               <div className=" p-[1rem_5%_8.5%_5%]">
-                <p className="font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] text-[#B7B7B7]">Xyrill Adrienne Combes</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="60" className="font-black text-[clamp(1.25rem,0.8571rem+1.9643vw,4rem)] text-[#B7B7B7]">Xyrill Adrienne Combes</p>
 
                 <div className="text-[clamp(1.8125rem,0.8729rem+4.698vw,3.125rem)] font-black -space-y-2">
-                  <p className="pt-1">Front-end Developer</p>
-                  <p className="">and Designer</p>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="120" className="pt-1">Front-end Developer</p>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="180" className="">and Designer</p>
                 </div>
                 
-                <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]">Hello! I am a trainee and apprentice programmer willing and interested to learn new things, adapting design creativity, and exploring more unique ideas.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="240" className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]">Hello! I am a trainee and apprentice programmer willing and interested to learn new things, adapting design creativity, and exploring more unique ideas.</p>
               </div>
 
               <div className="">
-                <div className="pb-8">
+                <div data-aos="zoom-in" data-aos-duration="750" data-aos-delay="300" className="pb-8">
                   <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#212020] to-[#131313] p-[clamp(0.55rem,0.371rem+0.8949vw,0.8rem)] cursor-pointer">
                     <div className="flex">
                       <p className="font-black text-[clamp(0.875rem,0.5618rem+1.566vw,1.3125rem)] ml-1">View resume</p>
@@ -188,7 +188,6 @@ function App() {
           <div className="relative">
             <div className="grid grid-cols-2 relative pt-[clamp(11rem,4.3333rem+10.4167vw,21rem)]">
               <div data-aos="fade-right" data-aos-duration="1000" className="flex justify-center items-center">
-                {/* <i className="fa-regular fa-circle-user text-[clamp(20rem,0rem+31.25vw,50rem)]"/> */}
                 <img src="/src/img/Desktop-pfp.gif" alt="profile" class="w-[clamp(25rem,2.3333rem+35.4167vw,59rem)] h-auto" />
               </div>
 
