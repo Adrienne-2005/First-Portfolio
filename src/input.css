@@ -20,3 +20,11 @@
 [data-aos="bar-fill"].aos-animate {
     transform: scaleX(1);
 }
+
+[data-aos="icon-tada"].aos-animate {
+    animation: tada 1s ease-in-out both;
+}
+
+[data-aos="icon-jelly"].aos-animate {
+    animation: jelly 1s ease-out forwards;
+}

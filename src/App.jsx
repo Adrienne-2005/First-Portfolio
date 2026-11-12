@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import 'aos/dist/aos.css';
+import CharacteristicsCard from './components/characteristic';
+import SkillCards from './components/skills';
 import AOS from 'aos';
 
 function findByAttr(root, tag, attr) {
@@ -91,6 +93,7 @@ function App() {
       duration: 400, 
       once: true, 
       disable: 'mobile', 
+      mirror: true,
       easing: 'ease-out-cubic' });
     AOS.refresh();
 
@@ -160,7 +163,7 @@ function App() {
                   <p className="">and Designer</p>
                 </div>
                 
-                <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem voluptatum molestias nesciunt praesentium officiis. Sed reiciendis sint vitae eos.</p>
+                <p className="text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)] text-[#A2A1A1] p-[0.55rem_5%_0%_5%]">Hello! I am a trainee and apprentice programmer willing and interested to learn new things, adapting design creativity, and exploring more unique ideas.</p>
               </div>
 
               <div className="">
@@ -199,7 +202,7 @@ function App() {
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000"data-aos-delay="150" >
-                  <p className="text-[clamp(1.1rem,0.2333rem+1.3542vw,2.4rem)] mt-[2.5%] text-[#A2A1A1]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, nulla. Recusandae obcaecati maiores natus non consequatur quae cupiditate, ipsa odit.</p>
+                  <p className="text-[clamp(1.1rem,0.2333rem+1.3542vw,2.4rem)] mt-[2.5%] text-[#A2A1A1]">Hello! I am a trainee and apprentice programmer willing and interested to learn new things, adapting design creativity, and exploring more unique ideas.</p>
 
                   <div className="mt-[clamp(2rem,0.3333rem+2.6042vw,4.5rem)] pl-[3%]">
                     <button className="button rounded-lg backdrop-blur-[3px] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] bg-linear-to-b from-[#1b1a1a7c] to-[#0e0e0e6a] p-[clamp(0.85rem,0.0833rem+1.1979vw,2rem)] cursor-pointer">
@@ -224,52 +227,12 @@ function App() {
         <div className="p-[0_7%_2rem_7%]">
           <div className="">
             <p data-aos="fade-left" data-aos-duration="500" className="text-[clamp(1.5rem,0.8571rem+3.2143vw,6rem)] font-black">Characteristics</p>
-            <p data-aos="fade-left" data-aos-duration="500" className="text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore etillum laborum, accusamus vel velit!</p>
+            <p data-aos="fade-left" data-aos-duration="500" className="text-[#9b9a9a] p-[0_3%_0_3%] text-[clamp(0.6875rem,0.4643rem+1.1161vw,2.25rem)]">All of my character traits as a front-end developer that I can show to the people and my future clients:</p>
           </div>
         </div>
 
         <section className="m-[1rem_8%_1rem] md:m-[1rem_7%_1rem]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
-            <div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="500">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[#fdfcfc47] border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] p-[10%]">
-                  <i className="fa-regular fa-alarm-clock text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)] " />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Punctual</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicaboarchitecto nihil a, aspernatur quo quos neque laudantium nesciuntpariatur at?</p>
-                </div>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="500">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-regular fa-lightbulb text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Motivation</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,consectetur minima sit optio ipsum fuga odit sint eos corrupticum.</p>
-                </div>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-regular fa-cloud text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Curiosity</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quiatenetur esse nostrum ea aperiam possimus cupiditate deseruntconsequatur itaque?</p>
-                </div>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-delay="150" data-aos-duration="500">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border-[clamp(0.0625rem,0.0446rem+0.0893vw,0.1875rem)] border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-solid fa-users text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="font-black pt-[5%] text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)]">Teamwork</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impeditodit nesciunt ratione dolorem soluta tempore accusantium quae ipsaminima fugiat!</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <CharacteristicsCard />
         </section>
 
         <div data-aos="zoom-in" className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%] relative">
@@ -410,47 +373,7 @@ function App() {
             <hr className="text-[#6d6b6b] font-thin" />
           </div>
 
-          <div className="m-[1rem_7%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[2%] auto-rows-fr">
-            <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="0">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-solid fa-brush text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">UI / UX Web Designer</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1 grow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
-                </div>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="50">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-solid fa-computer text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Front-end Developer</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1 grow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
-                </div>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="150">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-solid fa-tablet-screen-button text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Responsive Performance</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1 grow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
-                </div>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="200">
-              <div className="contents">
-                <div className="bg-linear-to-b from-[#1b1a1abd] to-[#18171787] backdrop-blur-xl rounded-[clamp(0.5rem,0.1661rem+0.5212vw,1rem)] h-full flex flex-col border border-[#fdfcfc47] p-[10%]">
-                  <i className="fa-solid fa-code-branch text-[clamp(2.5rem,1.9286rem+2.8571vw,6.5rem)]" />
-                  <p className="text-[#e6e4e4] font-black text-[clamp(1.4rem,1.1rem+1.5vw,3.5rem)] pt-[5%] lg:pb-5">Version Control</p>
-                  <p className="text-[#7a7a7a] text-[clamp(0.75rem,0.6429rem+0.5357vw,1.5rem)] m-1 grow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,minus fugit. Incidunt commodi eos quod a id</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <SkillCards />
           
           <div data-aos="zoom-in" className="p-[clamp(2.5rem,1.6rem+4.5vw,7rem)_7%]">
             <hr className="text-[#454444] font-thin" />
@@ -593,10 +516,7 @@ function App() {
         </div>
       </section>
 
-      <footer
-        className="footer p-[clamp(2rem,1.3571rem+3.2143vw,6.5rem)] bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47] grid grid-cols-1 sm:grid-cols-2 sm:gap-[10%] text-[#cbcaca]"
-        id="contacts"
-      >
+      <footer className="footer p-[clamp(2rem,1.3571rem+3.2143vw,6.5rem)] bg-linear-to-b from-[#1a1a1a82] to-[#0f0f0f70] backdrop-blur-md border-t border-[#fdfcfc47] grid grid-cols-1 sm:grid-cols-2 sm:gap-[10%] text-[#cbcaca]" id="contacts">
         <div className="flex flex-col justify-between space-y-[clamp(1rem,0.7143rem+1.4286vw,3rem)]">
           <div data-aos="fade-left" data-aos-duration="500" className="flex items-start">
             <i className="fa-solid fa-location-dot text-[clamp(1.5rem,1rem+2.5vw,5rem)] text-[#fdfcfc] mt-1 shrink-0" />
